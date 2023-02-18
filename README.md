@@ -1,15 +1,6 @@
-# Astro Starter Kit: Blog
+# Portfolio of NT Consulting
 
-```
-npm create astro@latest -- --template blog
-```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/blog)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![blog](https://user-images.githubusercontent.com/4677417/186189140-4ef17aac-c3c9-4918-a8c2-ce86ba1bb394.png)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e9a4516b-9fc9-4e4f-9620-3bbbf3f3ab5f/deploy-status)](https://app.netlify.com/sites/heroic-mandazi-8bb0fa/deploys)
 
 Features:
 
@@ -60,8 +51,5 @@ All commands are run from the root of the project, from a terminal:
 
 ## 👀 Want to learn more?
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+- [Astro documentation](https://docs.astro.build) 
+- [Astro Discord server](https://astro.build/chat).
