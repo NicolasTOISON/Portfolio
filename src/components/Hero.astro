@@ -1,14 +1,52 @@
 ---
-
+import Header from "../components/Header.astro";
+import Button from "./Button.astro";
 ---
-
-<div class="hero-container">
-    <div class="titles-container"></div>
+<div class="homepage-container">
+  <lottie-player src="/animations/bleu-sombre.json" speed="0.5" loop autoplay></lottie-player>
+  <Header />
+  <div class="hero-container">
+    <span> Salut👋 !</span><br />
+    <span>Je m'appelle <span class="accentued">Nicolas</span></span>
+    <h1>
+      Je suis passionné de technologie depuis toujours, j'ai occupé plusieurs
+      postes dans l'univers du développent logiciel depuis 7 ans et suis
+      Freelance depuis 3 ans.
+    </h1>
+    <Button href="/about" icon="/icons/home.svg">ABOUT ME</Button>
+  </div>
+  <img class="icon-scroll-down" src="/icons/scroll-down.svg">
 </div>
 <style>
-    .hero-container {
-        width: 100%;
-        height: 100vh;
-        background-image: url(/backgrounds/motif_sombre.svg)
-    }
+  .homepage-container {
+    height: 100vh;
+  }
+  lottie-player{
+    z-index: -1;
+    position: absolute;
+    top: 0;    
+    right: 0;
+    width: 87%;
+  }
+  .hero-container {
+    position: relative;
+    top: 127px;
+    left: 176px;
+    font-size: 64px;
+    font-weight: 500;
+    width: 40%;
+  }
+  .hero-container > h1 {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .accentued {
+    color: #637ffd;
+  }
+  .icon-scroll-down{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+  }
 </style>

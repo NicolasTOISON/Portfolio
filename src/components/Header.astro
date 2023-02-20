@@ -6,14 +6,20 @@ import Logo from "./Logo.astro";
 <header>
   <Logo />
   <nav>
-    <HeaderLink href="/" icon="/icons/home.svg">HOME</HeaderLink>
-    <HeaderLink href="/about" icon="/icons/user.svg">ABOUT ME</HeaderLink>
-    <HeaderLink href="/blog" icon="/icons/comment.svg">BLOG</HeaderLink>
+    <HeaderLink href="/" icon="/icons/home.svg" class="icon">HOME</HeaderLink>
+    <HeaderLink href="/about" icon="/icons/user.svg" class="icon">
+      ABOUT ME
+    </HeaderLink>
+    <HeaderLink href="/blog" icon="/icons/comment.svg" class="icon">
+      BLOG
+    </HeaderLink>
   </nav>
 </header>
 <style>
   header {
-    width: 100%;
+    padding: 0px 64px;
+    max-width: 100%;
+    z-index: 1;
     display: inline-flex;
     align-items: center;
     background: linear-gradient(180deg, #0C102C 0%, rgba(12, 16, 44, 0) 100%);

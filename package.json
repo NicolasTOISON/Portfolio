@@ -9,7 +9,7 @@
     "build": "eslint --ext .astro src && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "clean": ""
+    "clean": "npm cache clean --force && rm -rf node_modules && rm -rf dist"
   },
   "dependencies": {
     "@astrojs/mdx": "^0.15.0",
