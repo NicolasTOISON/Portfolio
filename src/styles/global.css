@@ -3,17 +3,21 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
+
+@font-face {
+  font-family: "Agrandir";
+  src: url("/fonts/PPAgrandir-Regular.woff2") format("woff2");
+}
+
 body {
-  font-family: Verdana, sans-serif;
-  margin: auto;
-  padding: 20px;
-  max-width: 65ch;
+  font-family: Agrandir;
+  margin: 0px 64px;
   text-align: left;
-  background-color: #fff;
+  background-color: #0c102c;
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.5;
-  color: #444;
+  color: white;
 }
 h1,
 h2,
@@ -23,13 +27,10 @@ h5,
 h6,
 strong,
 b {
-  color: #222;
+  color: #637ffd;
 }
 a {
-  color: #3273dc;
-}
-nav a {
-  margin-right: 10px;
+  color: white;
 }
 textarea {
   width: 100%;
@@ -50,7 +51,7 @@ img {
 }
 code {
   padding: 2px 5px;
-  background-color: #f2f2f2;
+  background-color: #637ffd;
 }
 pre {
   padding: 1rem;

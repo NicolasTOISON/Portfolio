@@ -8,5 +8,5 @@ import robotsTxt from "astro-robots-txt";
 // https://astro.build/config
 export default defineConfig({
   site: "https://example.com",
-  integrations: [mdx(), sitemap(), robotsTxt()]
+  integrations: [mdx(), sitemap(), robotsTxt()],
 });
