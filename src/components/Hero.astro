@@ -2,8 +2,10 @@
 import Header from "../components/Header.astro";
 import Button from "./Button.astro";
 ---
+
 <div class="homepage-container">
-  <lottie-player src="/animations/bleu-sombre.json" speed="0.5" loop autoplay></lottie-player>
+  <lottie-player src="/animations/bleu-sombre.json" speed="0.5" loop autoplay
+  ></lottie-player>
   <Header />
   <div class="hero-container">
     <span> Salut👋 !</span><br />
@@ -15,16 +17,20 @@ import Button from "./Button.astro";
     </h1>
     <Button href="/about" icon="/icons/home.svg">ABOUT ME</Button>
   </div>
-  <img class="icon-scroll-down" src="/icons/scroll-down.svg" alt="scroll dozn icon">
+  <img
+    class="icon-scroll-down"
+    src="/icons/scroll-down.svg"
+    alt="scroll dozn icon"
+  />
 </div>
 <style>
   .homepage-container {
     height: 100vh;
   }
-  lottie-player{
+  lottie-player {
     z-index: -1;
     position: absolute;
-    top: 0;    
+    top: 0;
     right: 0;
     width: 87%;
   }
@@ -44,7 +50,7 @@ import Button from "./Button.astro";
   .accentued {
     color: #637ffd;
   }
-  .icon-scroll-down{
+  .icon-scroll-down {
     position: absolute;
     bottom: 10px;
     left: 50%;

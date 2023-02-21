@@ -8,7 +8,7 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, "");
 ---
 
 <a href={href} class:list={[className, { active: isActive }]} {...props}>
-  <img class:list={{ active: isActive }} src={icon} alt="menu icon" />
+  <img class:list={{ active: isActive }}src={icon} alt="menu icon" />
   <slot />
 </a>
 <style>
@@ -23,8 +23,15 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, "");
   img {
     margin: auto;
     padding-right: 12px;
+    filter: invert(100%);
   }
   a.active {
     color: #637ffd;
+  }
+  /**
+  * Tool to compute filter based on the targeted color : https://codepen.io/sosuke/pen/Pjoqqp
+  */
+  img.active{
+    filter: invert(50%) sepia(63%) saturate(3791%) hue-rotate(212deg) brightness(101%) contrast(98%);
   }
 </style>
