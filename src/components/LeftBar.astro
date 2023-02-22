@@ -1,0 +1,22 @@
+---
+import NavBar from "./NavBar.astro";
+
+const { hidden } = Astro.props;
+---
+<header class:list={["left-navbar", { hidden }]}>
+  <NavBar border position="left" showSocial/>
+</header>
+<style>
+  header {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: inline-flex;
+    flex-direction: column;
+    border-right: solid 1px #1d2656;
+  }
+  .hidden {
+    display: none;
+  }
+</style>

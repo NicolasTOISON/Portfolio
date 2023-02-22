@@ -1,42 +1,43 @@
 ---
-import HeaderLink from "./HeaderLink.astro";
-import Logo from "./Logo.astro";
+import Button from "./Button.astro";
 
 const { hidden } = Astro.props;
 ---
 
-<header class:list={['main-navbar', { hidden }]}>
-  <Logo bordered />
-  <nav>
-    <HeaderLink href="/" icon="/icons/home.svg" class="icon">HOME</HeaderLink>
-    <HeaderLink href="/about" icon="/icons/user.svg" class="icon">
-      ABOUT ME
-    </HeaderLink>
-    <HeaderLink href="/blog" icon="/icons/comment.svg" class="icon">
-      BLOG
-    </HeaderLink>
-  </nav>
-</header>
+<div class:list={["rightbar", { hidden }]}>
+  <div class="rightbar-inner-container">
+    <span>👋</span>
+    <span>Id volutpat neque justo laoreet ac ?</span>
+    <Button href="/about" icon="/icons/mail.svg">work with me</Button>
+  </div>
+</div>
 <style>
-  header {
+  .rightbar {
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     display: inline-flex;
     flex-direction: column;
+    max-width: 13%;
+    margin: 48px 32px;
+    border: 1px solid #1d2656;
+    text-align: center;
   }
-  .hidden{
+  .hidden {
     display: none;
   }
-  nav {
+  .rightbar-inner-container {
     display: inline-flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    min-width: 224px;
+    padding: 24px 16px;
   }
-  nav a:first-child {
-    margin-top: 32px;
+  .rightbar-inner-container > * {
+    margin-bottom: 16px;
   }
-  nav a {
-    margin-bottom: 32px;
+  .rightbar-inner-container span:first-child {
+    font-weight: 700;
+    font-size: 48px;
   }
 </style>

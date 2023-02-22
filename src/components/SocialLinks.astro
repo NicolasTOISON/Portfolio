@@ -1,0 +1,36 @@
+---
+const {showSocial} = Astro.props;
+---
+<div class="social-links">
+  <a href="https://twitter.com/NicolasTOISON">
+    <img src="/icons/twitter.svg" alt="Twitter Icon" />
+    Twitter
+  </a>
+  <a href="https://www.linkedin.com/in/nicolastoison/">
+    <img src="/icons/linkedin.svg" alt="LinkedIn Icon" />
+    LinkedIn
+  </a>
+</div>
+<style>
+  div {
+    position: absolute;
+    bottom: 48px;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    border-top: solid 1px #1d2656;
+  }
+  a {
+    display: inline-flex;
+    text-decoration: none;
+    margin-left: 48px;
+    margin-top: 16px;
+  }
+  a:first-child {
+    margin-top: 32px;
+  }
+  img {
+    margin: auto 0;
+    padding-right: 12px;
+  }
+</style>

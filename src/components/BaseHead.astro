@@ -54,12 +54,16 @@ const { title, description, image = "/placeholder-social.jpg" } = Astro.props;
   window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-      document.querySelector(".hero-navbar").style.display = "inline-flex";
-      document.querySelector(".main-navbar").style.display = "none";
+      if (currentScrollPos < 300) {
+        document.querySelector(".hero-navbar").style.display = "inline-flex";
+        document.querySelector(".left-navbar").style.display = "none";
+        document.querySelector(".rightbar").style.display = "none";
+      }
     } else {
       if (currentScrollPos > 300) {
         document.querySelector(".hero-navbar").style.display = "none";
-        document.querySelector(".main-navbar").style.display = "inline-flex";
+        document.querySelector(".left-navbar").style.display = "inline-flex";
+        document.querySelector(".rightbar").style.display = "inline-flex";
       }
     }
     prevScrollpos = currentScrollPos;

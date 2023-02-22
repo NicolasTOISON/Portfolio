@@ -67,10 +67,9 @@ blockquote {
   font-style: italic;
 }
 .content-container {
-  margin: 0;
   padding: 0;
   position: relative;
-  margin: 0 13.5%;
-  padding-left: 48px;
-  background-color: black;
+  margin: 0 13%;
+  padding: 0px 48px;
+  max-width: 67.25%;
 }
