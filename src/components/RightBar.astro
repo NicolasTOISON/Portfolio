@@ -1,10 +1,12 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import Logo from "./Logo.astro";
+
+const { hidden } = Astro.props;
 ---
 
-<header class="hero-navbar">
-  <Logo />
+<header class:list={['main-navbar', { hidden }]}>
+  <Logo bordered />
   <nav>
     <HeaderLink href="/" icon="/icons/home.svg" class="icon">HOME</HeaderLink>
     <HeaderLink href="/about" icon="/icons/user.svg" class="icon">
@@ -17,15 +19,24 @@ import Logo from "./Logo.astro";
 </header>
 <style>
   header {
-    padding: 0px 64px;
-    max-width: 100%;
-    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: inline-flex;
-    align-items: center;
-    background: linear-gradient(180deg, #0c102c 0%, rgba(12, 16, 44, 0) 100%);
+    flex-direction: column;
+  }
+  .hidden{
+    display: none;
   }
   nav {
-    position: absolute;
-    right: 64px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav a:first-child {
+    margin-top: 32px;
+  }
+  nav a {
+    margin-bottom: 32px;
   }
 </style>

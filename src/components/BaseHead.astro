@@ -46,3 +46,22 @@ const { title, description, image = "/placeholder-social.jpg" } = Astro.props;
 <script
   src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
 ></script>
+
+<!-- Custom script -->
+<script type="text/javascript">
+  var prevScrollpos = window.pageYOffset;
+
+  window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.querySelector(".hero-navbar").style.display = "inline-flex";
+      document.querySelector(".main-navbar").style.display = "none";
+    } else {
+      if (currentScrollPos > 300) {
+        document.querySelector(".hero-navbar").style.display = "none";
+        document.querySelector(".main-navbar").style.display = "inline-flex";
+      }
+    }
+    prevScrollpos = currentScrollPos;
+  };
+</script>

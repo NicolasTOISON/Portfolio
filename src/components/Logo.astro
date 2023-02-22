@@ -1,7 +1,8 @@
 ---
+const { bordered } = Astro.props;
 ---
 
-<a href="/">
+<a href="/" class:list={{ bordered }}>
   <img
     src="/logo/logo_sombre.svg"
     alt="Logo de Nicolas TOISON"
@@ -13,5 +14,11 @@
   a {
     position: relative;
     margin: 48px 0px;
+  }
+  .bordered {
+    margin: 0;
+    padding: 68px 48px;
+    border-right: solid 1px #1d2656;
+    border-bottom: solid 1px #1d2656;
   }
 </style>
