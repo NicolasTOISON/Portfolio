@@ -7,6 +7,7 @@
 @font-face {
   font-family: "Agrandir";
   src: url("/fonts/PPAgrandir-Regular.woff2") format("woff2");
+  font-display: swap;
 }
 
 body {
