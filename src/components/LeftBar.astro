@@ -3,8 +3,9 @@ import NavBar from "./NavBar.astro";
 
 const { hidden } = Astro.props;
 ---
+
 <header class:list={["left-navbar", { hidden }]}>
-  <NavBar border position="left" showSocial/>
+  <NavBar border position="left" showSocial />
 </header>
 <style>
   header {

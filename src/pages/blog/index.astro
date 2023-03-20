@@ -4,6 +4,7 @@ import BaseHead from "../../components/BaseHead.astro";
 import LeftBar from "../../components/LeftBar.astro";
 import Footer from "../../components/Footer.astro";
 import { getCollection } from "astro:content";
+import RightBar from "../../components/RightBar.astro";
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
@@ -34,7 +35,8 @@ const posts = (await getCollection("blog")).sort(
   </head>
   <body>
     <LeftBar />
-    <main>
+    <RightBar />
+    <main class="content-container">
       <section>
         <ul>
           {
