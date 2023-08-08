@@ -29,9 +29,10 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, "");
   a:hover {
     color: #637ffd;
   }
-  a:hover > img{
+  a:hover > img {
     color: #637ffd;
-    filter: invert(42%) sepia(57%) saturate(1920%) hue-rotate(213deg) brightness(103%) contrast(98%);
+    filter: invert(42%) sepia(57%) saturate(1920%) hue-rotate(213deg)
+      brightness(103%) contrast(98%);
   }
   /**
   * Tool to compute filter based on the targeted color : https://codepen.io/sosuke/pen/Pjoqqp
@@ -40,5 +41,4 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, "");
     filter: invert(50%) sepia(63%) saturate(3791%) hue-rotate(212deg)
       brightness(101%) contrast(98%);
   }
-  
 </style>

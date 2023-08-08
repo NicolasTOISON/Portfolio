@@ -4,7 +4,7 @@ import Button from "./Button.astro";
 const { hidden } = Astro.props;
 ---
 
-<div class:list={["rightbar", { hidden }]}>
+<aside class:list={["rightbar", { hidden }]}>
   <div class="rightbar-inner-container">
     <span>👋</span>
     <span>Id volutpat neque justo laoreet ac ?</span>
@@ -16,7 +16,7 @@ const { hidden } = Astro.props;
       work with me
     </Button>
   </div>
-</div>
+</aside>
 <style>
   .rightbar {
     position: fixed;

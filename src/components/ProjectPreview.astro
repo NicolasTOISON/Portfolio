@@ -1,0 +1,51 @@
+---
+import Category from "../components/Category.astro";
+
+export interface ProjectTile {
+    name: string;
+    excerpt: string;
+    logoPath: string;
+    category: string;
+    categoryColor: string;
+    size: string;
+}
+
+const { name, excerpt, logoPath, category, categoryColor, size } = Astro.props;
+---
+<article class:list={["project-container", { size }]}>
+    <div class="first-row">
+        <img src={logoPath} alt="logo"/>
+        <Category name={category} color={categoryColor}/>
+    </div>
+    <div class="preview-info">
+        <h3>{name}</h3>
+        <p>{excerpt}</p>
+    </div>
+</article>
+<style is:global>
+    .project-container {
+        display: grid;
+        border: solid 1px #1D2656;
+    }
+    .project-container:first-child {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .project-container > .first-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        right: 0;
+        padding: 24px 0px 0px 24px;
+    }
+    .first-row div:last-child {
+        justify-self: end;
+    }
+    .preview-info {
+        padding: 64px 24px 24px 24px;
+    }
+    .preview-info > *:last-child {
+        margin-top: 8px;
+    }
+    
+</style>

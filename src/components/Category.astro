@@ -1,0 +1,32 @@
+---
+export interface Category {
+    name: string;
+    color: string;
+}
+
+const { name, color } = Astro.props;
+---
+<div class="category">
+    <span>{name}</span>
+</div>
+<style define:vars={{ color }}>
+    .category {
+        background-color: #1D2656;
+        padding: 4px 12px;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        justify-content: center;        
+        align-items: center;
+    }
+    .category::before {
+        content: '';
+        background: var(--color);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 6px;
+    }
+</style>
+

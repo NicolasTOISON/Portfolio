@@ -5,10 +5,14 @@ import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import RightBar from "../components/RightBar.astro";
 import LeftBar from "../components/LeftBar.astro";
+import Separator from "../components/Separator.astro";
+import ProjectTile from "../components/ProjectTile.astro";
+import ProjectList from "../components/ProjectList.astro";
+import Category from "../components/Category.astro";
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
@@ -17,61 +21,29 @@ import LeftBar from "../components/LeftBar.astro";
     <LeftBar hidden />
     <RightBar hidden />
     <main class="content-container">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-        fermentum, nulla ut malesuada hendrerit, magna ex sagittis sapien, ac
-        dignissim augue lectus vel nunc. Pellentesque tincidunt scelerisque
-        rhoncus. Phasellus ullamcorper ut augue ullamcorper imperdiet. Etiam in
-        semper mauris. Sed tortor lacus, mattis at pellentesque pellentesque,
-        tempor a neque. Etiam cursus nec urna et ornare. Duis venenatis
-        dignissim posuere.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-        fermentum, nulla ut malesuada hendrerit, magna ex sagittis sapien, ac
-        dignissim augue lectus vel nunc. Pellentesque tincidunt scelerisque
-        rhoncus. Phasellus ullamcorper ut augue ullamcorper imperdiet. Etiam in
-        semper mauris. Sed tortor lacus, mattis at pellentesque pellentesque,
-        tempor a neque. Etiam cursus nec urna et ornare. Duis venenatis
-        dignissim posuere.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-        fermentum, nulla ut malesuada hendrerit, magna ex sagittis sapien, ac
-        dignissim augue lectus vel nunc. Pellentesque tincidunt scelerisque
-        rhoncus. Phasellus ullamcorper ut augue ullamcorper imperdiet. Etiam in
-        semper mauris. Sed tortor lacus, mattis at pellentesque pellentesque,
-        tempor a neque. Etiam cursus nec urna et ornare. Duis venenatis
-        dignissim posuere.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-        fermentum, nulla ut malesuada hendrerit, magna ex sagittis sapien, ac
-        dignissim augue lectus vel nunc. Pellentesque tincidunt scelerisque
-        rhoncus. Phasellus ullamcorper ut augue ullamcorper imperdiet. Etiam in
-        semper mauris. Sed tortor lacus, mattis at pellentesque pellentesque,
-        tempor a neque. Etiam cursus nec urna et ornare. Duis venenatis
-        dignissim posuere.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-        fermentum, nulla ut malesuada hendrerit, magna ex sagittis sapien, ac
-        dignissim augue lectus vel nunc. Pellentesque tincidunt scelerisque
-        rhoncus. Phasellus ullamcorper ut augue ullamcorper imperdiet. Etiam in
-        semper mauris. Sed tortor lacus, mattis at pellentesque pellentesque,
-        tempor a neque. Etiam cursus nec urna et ornare. Duis venenatis
-        dignissim posuere.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-        fermentum, nulla ut malesuada hendrerit, magna ex sagittis sapien, ac
-        dignissim augue lectus vel nunc. Pellentesque tincidunt scelerisque
-        rhoncus. Phasellus ullamcorper ut augue ullamcorper imperdiet. Etiam in
-        semper mauris. Sed tortor lacus, mattis at pellentesque pellentesque,
-        tempor a neque. Etiam cursus nec urna et ornare. Duis venenatis
-        dignissim posuere.
-      </p>
+      <section class="sub-content">
+        <h2>Projets</h2>
+        <p>Plongez dans mon royaume de pixels et de possibilités, où le développement web innovant rencontre le design artistique. Ce portfolio est une sélection de projets qui mettent en évidence ma capacité à transformer des concepts en expériences en ligne captivantes.</p>
+        <Separator/>
+        <ProjectList/>
+        <!-- <Category name="SEO" color="#FDD263"></Category>
+        <Category name="E-commerce" color="#8499F7"></Category>
+        <Category name="SEA" color="#FD6363"></Category>
+        <Category name="Web development" color="#44CB8A"></Category>
+        <Category name="LEAN" color="#F987E6"></Category>
+        <Category name="Scrum" color="#EB8D48"></Category>
+        <Category name="Kanban" color="#B7E13F"></Category>
+        <Category name="Agile" color="#3FE1D8"></Category> -->
+      </section>
     </main>
     <Footer />
   </body>
 </html>
+<style>
+  .content-container {
+  position: relative;
+  margin: 0 14%;
+  padding: 48px;
+  max-width: 66.25%;
+}
+</style>

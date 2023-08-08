@@ -56,13 +56,13 @@ const { title, description, image = "/placeholder-social.jpg" } = Astro.props;
   window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-      if (currentScrollPos < 300) {
+      if (currentScrollPos < 800) {
         document.querySelector(".hero-navbar").style.display = "inline-flex";
         document.querySelector(".left-navbar").style.display = "none";
         document.querySelector(".rightbar").style.display = "none";
       }
     } else {
-      if (currentScrollPos > 300) {
+      if (currentScrollPos > 800) {
         document.querySelector(".hero-navbar").style.display = "none";
         document.querySelector(".left-navbar").style.display = "inline-flex";
         document.querySelector(".rightbar").style.display = "inline-flex";
