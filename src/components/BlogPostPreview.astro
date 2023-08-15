@@ -1,0 +1,49 @@
+---
+import Category from "./Category.astro";
+
+export interface PostPreview {
+    title: string;
+    description: string;
+    heroImage: string;
+    category: string;
+    categoryColor: string;
+}
+
+
+const { title, description, heroImage, category, categoryColor} = Astro.props;
+---
+<article class="blog-container">
+    <div class="first-row">
+        <img src={heroImage} alt="logo"/>
+    </div>
+    <div class="preview-info">
+        <h3>{title}</h3>
+        <Category name={category} color={categoryColor}/>
+        <p>{description}</p>
+    </div>
+</article>
+<style is:global>
+    .blog-container {
+        display: grid;
+    }
+    .blog-container:first-child {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .blog-container:first-child > .first-row {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 8;
+    }
+    .blog-container:first-child > .first-row > img {
+        max-height: 260px;
+        width: 100%;
+    }
+    .blog-container:first-child > .preview-info {
+        display: grid;
+        grid-column-start: 8;
+        grid-column-end: 12;
+    }    
+</style>

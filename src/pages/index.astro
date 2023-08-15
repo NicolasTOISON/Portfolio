@@ -6,9 +6,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import RightBar from "../components/RightBar.astro";
 import LeftBar from "../components/LeftBar.astro";
 import Separator from "../components/Separator.astro";
-import ProjectTile from "../components/ProjectTile.astro";
 import ProjectList from "../components/ProjectList.astro";
-import Category from "../components/Category.astro";
+import BlogPosts from "../components/BlogPosts.astro";
 ---
 
 <!DOCTYPE html>
@@ -34,6 +33,12 @@ import Category from "../components/Category.astro";
         <Category name="Scrum" color="#EB8D48"></Category>
         <Category name="Kanban" color="#B7E13F"></Category>
         <Category name="Agile" color="#3FE1D8"></Category> -->
+      </section>
+      <section>
+        <h2>Blog</h2>
+        <p>Hac ita persuasione reducti intra moenia bellatores obseratis undique portarum aditibus, propugnaculis insistebant et pinnis, congesta undique saxa telaque habentes in promptu.</p>
+        <Separator/>
+        <BlogPosts/>
       </section>
     </main>
     <Footer />

@@ -1,0 +1,27 @@
+---
+import BlogPostPreview from "./BlogPostPreview.astro";
+import Separator from "./Separator.astro";
+
+const posts = [
+{ name : "Pellentesque eu semper nisl pellentesque amet ligula pellentesque.", description:"CAmet in imperdiet odio lorem non dignissim purus et sem. Congue lorem suspendisse...", logoPath:"/logo/logo_sombre.svg", category:"Développement web", categoryColor:"#44CB8A"},
+{ name : "MySkiValet", description:"Conception d'une application permettant de révolutionner l'expérience de location de ski en France", logoPath:"/logo/logo_sombre.svg", category:"SEO", categoryColor:"#FDD263"},
+{ name : "test", description:"Lacus nunc viverra integer nisl nibh sit volutpat donec nisl neque blandit lectus pharetra.", logoPath:"/logo/logo_sombre.svg", category:"SEO", categoryColor:"#FDD263"},
+{ name : "test", description:"Lacus nunc viverra integer nisl nibh sit volutpat donec nisl neque blandit lectus pharetra.", logoPath:"/logo/logo_sombre.svg", category:"SEO", categoryColor:"#FDD263"},
+]
+
+---
+<div class="posts-list">
+    {posts.map((post) => (
+        <BlogPostPreview title={post.name} description={post.description} heroImage={post.logoPath} category={post.category} categoryColor={post.categoryColor}/>
+      ))}
+      {posts.map((post) => (
+        <BlogPostPreview title={post.name} description={post.description} heroImage={post.logoPath} category={post.category} categoryColor={post.categoryColor}/>
+      ))}
+</div>
+<style>
+    .posts-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+    }
+</style>

@@ -7,12 +7,11 @@ export interface ProjectTile {
     logoPath: string;
     category: string;
     categoryColor: string;
-    size: string;
 }
 
-const { name, excerpt, logoPath, category, categoryColor, size } = Astro.props;
+const { name, excerpt, logoPath, category, categoryColor} = Astro.props;
 ---
-<article class:list={["project-container", { size }]}>
+<article class="project-container">
     <div class="first-row">
         <img src={logoPath} alt="logo"/>
         <Category name={category} color={categoryColor}/>
@@ -38,13 +37,16 @@ const { name, excerpt, logoPath, category, categoryColor, size } = Astro.props;
         right: 0;
         padding: 24px 0px 0px 24px;
     }
+    .project-container > .first-row > img {
+        max-height: 48px;
+    }
     .first-row div:last-child {
         justify-self: end;
     }
-    .preview-info {
+    .project-container > .preview-info {
         padding: 64px 24px 24px 24px;
     }
-    .preview-info > *:last-child {
+    .project-container > .preview-info > *:last-child {
         margin-top: 8px;
     }
     

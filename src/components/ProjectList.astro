@@ -2,17 +2,17 @@
 import ProjectPreview from "../components/ProjectPreview.astro";
 
 const projects = [
-{ name : "test", excerpt:"Pellentesque mi venenatis sit ut nunc. Lacus ac nulla pretium est erat id est pellentesque.", logoPath:"/logo/logo_sombre.svg", category:"SEO", categoryColor:"#FDD263", size: "large"},
-{ name : "test", excerpt:"Tellus posuere consequat volutpat pharetra. Volutpat justo sit metus risus lacus facilisis.", logoPath:"/logo/logo_sombre.svg", category:"SEO", categoryColor:"#FDD263", size: "small"},
-{ name : "test", excerpt:"Lacus nunc viverra integer nisl nibh sit volutpat donec nisl neque blandit lectus pharetra.", logoPath:"/logo/logo_sombre.svg", category:"SEO", categoryColor:"#FDD263", size: "small"},
-{ name : "test", excerpt:"Lacus nunc viverra integer nisl nibh sit volutpat donec nisl neque blandit lectus pharetra.", logoPath:"/logo/logo_sombre.svg", category:"SEO", categoryColor:"#FDD263", size: "small"},
-{ name : "test", excerpt:"Lacus nunc viverra integer nisl nibh sit volutpat donec nisl neque blandit lectus pharetra.", logoPath:"/logo/logo_sombre.svg", category:"SEO", categoryColor:"#FDD263", size: "small"}
+{ name : "HéOTi Energies", excerpt:"Création d'une landing page pour capter un flux régulier de prospect souhaitant faire installer des panneaux solaires", logoPath:"/projects/logos/heoti-logo.svg", category:"Développement web", categoryColor:"#44CB8A"},
+{ name : "MySkiValet", excerpt:"Conception d'une application permettant de révolutionner l'expérience de location de ski en France", logoPath:"/logo/logo_sombre.svg", category:"SEO", categoryColor:"#FDD263"},
+{ name : "test", excerpt:"Lacus nunc viverra integer nisl nibh sit volutpat donec nisl neque blandit lectus pharetra.", logoPath:"/logo/logo_sombre.svg", category:"SEO", categoryColor:"#FDD263"},
+{ name : "test", excerpt:"Lacus nunc viverra integer nisl nibh sit volutpat donec nisl neque blandit lectus pharetra.", logoPath:"/logo/logo_sombre.svg", category:"SEO", categoryColor:"#FDD263"},
+{ name : "test", excerpt:"Lacus nunc viverra integer nisl nibh sit volutpat donec nisl neque blandit lectus pharetra.", logoPath:"/logo/logo_sombre.svg", category:"SEO", categoryColor:"#FDD263"}
 ]
 
 ---
 <div class="project-list">
     {projects.map((project) => (
-        <ProjectPreview name={project.name} excerpt={project.excerpt} logoPath={project.logoPath} category={project.category} categoryColor={project.categoryColor} size={project.size}></ProjectPreview>
+        <ProjectPreview name={project.name} excerpt={project.excerpt} logoPath={project.logoPath} category={project.category} categoryColor={project.categoryColor}></ProjectPreview>
       ))}
 </div>
 <style>
