@@ -31,6 +31,9 @@ const { title, description, heroImage, category, categoryColor, slug} = Astro.pr
     .blog-container {
         display: grid;
     }
+    .blog-container:hover {
+        border: solid 1px #1D2656;
+    }
     .blog-container:first-child {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -54,5 +57,11 @@ const { title, description, heroImage, category, categoryColor, slug} = Astro.pr
     .blog-container:not(:first-child) {
         display: grid;
         padding-top: 2rem;
+    }
+    .preview-info > h3 {
+        margin-bottom: 0.75rem;
+    }
+    .preview-info > *:last-child {
+        margin: 0.5rem 0rem 0rem 0rem;
     }
 </style>

@@ -31,12 +31,17 @@ h3 {
   font-weight: 100;
   color: white;
 }
+h5 {
+  margin: 0;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
 p {
-  font-size: 16px;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.85);
 }
 h4,
-h5,
 h6,
 strong,
 b {
@@ -80,5 +85,10 @@ blockquote {
   font-style: italic;
 }
 section {
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
+}
+.content-container {
+  position: relative;
+  margin: 0 16rem;
+  padding: 48px;
 }
