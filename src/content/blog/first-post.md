@@ -1,6 +1,8 @@
 ---
 title: "First post"
 description: "Lorem ipsum dolor sit amet"
+category: "Développement Web"
+categoryColor: "#44CB8A"
 pubDate: "Jul 08 2022"
 heroImage: "/placeholder-hero.jpg"
 ---
