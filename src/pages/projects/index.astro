@@ -5,12 +5,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
 import { getCollection } from "astro:content";
 import RightBar from "../../components/RightBar.astro";
 
-const posts = (await getCollection("projects")).sort(
+const projects = (await getCollection("projects")).sort(
   (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
@@ -38,16 +38,16 @@ const posts = (await getCollection("projects")).sort(
       <section>
         <ul>
           {
-            posts.map((post) => (
+            projects.map((project) => (
               <li>
-                <time datetime={post.data.pubDate.toISOString()}>
-                  {post.data.pubDate.toLocaleDateString("en-us", {
+                <time datetime={project.data.pubDate.toISOString()}>
+                  {project.data.pubDate.toLocaleDateString("en-us", {
                     year: "numeric",
                     month: "short",
                     day: "numeric",
                   })}
                 </time>
-                <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
+                <a href={`/projects/${project.slug}/`}>{project.data.title}</a>
               </li>
             ))
           }
