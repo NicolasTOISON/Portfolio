@@ -1,13 +1,17 @@
 ---
-export interface Props extends astroHTML.JSX.AnchorHTMLAttributes {}
+export interface HeaderLink {
+  href: string;
+  icon: string;
+  class: string;
+}
 
-const { href, icon, class: className, ...props } = Astro.props;
+const { href, icon, class: className } = Astro.props;
 
 const { pathname } = Astro.url;
 const isActive = href === pathname || href === pathname.replace(/\/$/, "");
 ---
 
-<a href={href} class:list={[className, { active: isActive }]} {...props}>
+<a href={href} class:list={[className, { active: isActive }]}>
   <img class:list={{ active: isActive }} src={icon} alt="menu icon" />
   <slot />
 </a>
