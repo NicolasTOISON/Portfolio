@@ -41,33 +41,3 @@ const { title, description, image = "/placeholder-social.jpg" } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
-
-<!-- Lottie Player import -->
-<script
-  src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
-  async
-  defer
-></script>
-
-<!-- Custom script -->
-<script type="text/javascript" defer async>
-  var prevScrollpos = window.pageYOffset;
-
-  window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      if (currentScrollPos < 800) {
-        document.querySelector(".hero-navbar").style.display = "inline-flex";
-        document.querySelector(".left-navbar").style.display = "none";
-        document.querySelector(".rightbar").style.display = "none";
-      }
-    } else {
-      if (currentScrollPos > 800) {
-        document.querySelector(".hero-navbar").style.display = "none";
-        document.querySelector(".left-navbar").style.display = "inline-flex";
-        document.querySelector(".rightbar").style.display = "inline-flex";
-      }
-    }
-    prevScrollpos = currentScrollPos;
-  };
-</script>
