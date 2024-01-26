@@ -2,55 +2,57 @@
 import Category from "../components/Category.astro";
 
 export interface ProjectTile {
-    name: string;
-    excerpt: string;
-    logoPath: string;
-    category: string;
-    categoryColor: string;
+  name: string;
+  excerpt: string;
+  logoPath: string;
+  category: string;
+  categoryColor: string;
 }
 
-const { name, excerpt, logoPath, category, categoryColor} = Astro.props;
+const { name, excerpt, logoPath, category, categoryColor, slug } = Astro.props;
 ---
+
 <article class="project-container">
-    <div class="first-row">
-        <img src={logoPath} alt="logo"/>
-        <Category name={category} color={categoryColor}/>
+  <a href={`/projects/${slug}/`}
+    ><div class="first-row">
+      <img src={logoPath} alt="logo" />
+      <Category name={category} color={categoryColor} />
     </div>
     <div class="preview-info">
-        <h3>{name}</h3>
-        <p>{excerpt}</p>
-    </div>
+      <h3>{name}</h3>
+      <p>{excerpt}</p>
+    </div></a
+  >
 </article>
 <style is:global>
-    .project-container {
-        display: grid;
-        border: solid 1px #1D2656;
-    }
-    .project-container:hover {
-        background-color: #637FFD;
-    }
-    .project-container:first-child {
-        display: grid;
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-    .project-container > .first-row {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        right: 0;
-        padding: 24px 0px 0px 24px;
-    }
-    .project-container > .first-row > img {
-        max-height: 48px;
-    }
-    .first-row div:last-child {
-        justify-self: end;
-    }
-    .project-container > .preview-info {
-        padding: 64px 24px 24px 24px;
-    }
-    .project-container > .preview-info > *:last-child {
-        margin-top: 8px;
-    }
-    
+  .project-container {
+    display: grid;
+    border: solid 1px #1d2656;
+  }
+  .project-container:hover {
+    background-color: #637ffd;
+  }
+  .project-container:first-child {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .project-container > .first-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    right: 0;
+    padding: 24px 0px 0px 24px;
+  }
+  .project-container > .first-row > img {
+    max-height: 48px;
+  }
+  .first-row div:last-child {
+    justify-self: end;
+  }
+  .project-container > .preview-info {
+    padding: 64px 24px 24px 24px;
+  }
+  .project-container > .preview-info > *:last-child {
+    margin-top: 8px;
+  }
 </style>

@@ -6,7 +6,7 @@ import { getCollection } from "astro:content";
 import RightBar from "../../components/RightBar.astro";
 
 const projects = (await getCollection("projects")).sort(
-  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 ---
 

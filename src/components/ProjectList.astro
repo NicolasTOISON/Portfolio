@@ -1,25 +1,42 @@
 ---
 import ProjectPreview from "../components/ProjectPreview.astro";
 
-const projects = [
+/* const projects = [
 { name : "HéOTi Energies", excerpt:"Création d'une landing page pour capter un flux régulier de prospect souhaitant faire installer des panneaux solaires", logoPath:"/projects/logos/heoti-logo.svg", category:"Développement web", categoryColor:"#44CB8A"},
 { name : "MySkiValet", excerpt:"Conception d'une application permettant de révolutionner l'expérience de location de ski en France", logoPath:"/logo/logo_sombre.svg", category:"SEO", categoryColor:"#FDD263"},
 { name : "test", excerpt:"Lacus nunc viverra integer nisl nibh sit volutpat donec nisl neque blandit lectus pharetra.", logoPath:"/logo/logo_sombre.svg", category:"SEO", categoryColor:"#FDD263"},
 { name : "test", excerpt:"Lacus nunc viverra integer nisl nibh sit volutpat donec nisl neque blandit lectus pharetra.", logoPath:"/logo/logo_sombre.svg", category:"SEO", categoryColor:"#FDD263"},
 { name : "test", excerpt:"Lacus nunc viverra integer nisl nibh sit volutpat donec nisl neque blandit lectus pharetra.", logoPath:"/logo/logo_sombre.svg", category:"SEO", categoryColor:"#FDD263"}
-]
+] */
 
+import { getCollection } from "astro:content";
+
+const projects = (await getCollection("projects")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
 ---
+
 <div class="project-list">
-    {projects.map((project) => (
-        <ProjectPreview name={project.name} excerpt={project.excerpt} logoPath={project.logoPath} category={project.category} categoryColor={project.categoryColor}></ProjectPreview>
-      ))}
+  {
+    projects
+      .slice(0, 5)
+      .map((project) => (
+        <ProjectPreview
+          name={project.data.title}
+          excerpt={project.data.description}
+          logoPath={project.data.heroImage}
+          category={project.data.category}
+          categoryColor={project.data.categoryColor}
+          slug={project.slug}
+        />
+      ))
+  }
 </div>
 <style>
-    .project-list{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 32px;
-    }
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 32px;
+  }
 </style>
