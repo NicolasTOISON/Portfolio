@@ -6,15 +6,27 @@ const posts = (await getCollection("blog")).sort(
   (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
 ---
+
 <div class="posts-list">
-    {posts.slice(0,4).map((post) => (
-        <BlogPostPreview title={post.data.title} description={post.data.description} heroImage={post.data.heroImage} category={post.data.category} categoryColor={post.data.categoryColor} slug={post.slug}/>
-      ))}
+  {
+    posts
+      .slice(0, 4)
+      .map((post) => (
+        <BlogPostPreview
+          title={post.data.title}
+          description={post.data.description}
+          heroImage={post.data.heroImage}
+          category={post.data.category}
+          categoryColor={post.data.categoryColor}
+          slug={post.slug}
+        />
+      ))
+  }
 </div>
 <style>
-    .posts-list{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 32px;
-    }
+  .posts-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 32px;
+  }
 </style>

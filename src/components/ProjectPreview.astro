@@ -37,22 +37,19 @@ const { name, excerpt, logoPath, category, categoryColor, slug } = Astro.props;
     grid-column-start: 1;
     grid-column-end: 3;
   }
-  .project-container > .first-row {
+  a > .first-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     right: 0;
     padding: 24px 0px 0px 24px;
   }
-  .project-container > .first-row > img {
-    max-height: 48px;
-  }
   .first-row div:last-child {
     justify-self: end;
   }
-  .project-container > .preview-info {
+  a > .preview-info {
     padding: 64px 24px 24px 24px;
   }
-  .project-container > .preview-info > *:last-child {
+  a > .preview-info > *:last-child {
     margin-top: 8px;
   }
 </style>
