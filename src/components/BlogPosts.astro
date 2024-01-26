@@ -1,7 +1,6 @@
 ---
 import BlogPostPreview from "./BlogPostPreview.astro";
 import { getCollection } from "astro:content";
-import Separator from "./Separator.astro";
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
