@@ -1,8 +1,8 @@
 ---
-import BottomBar from "./BottomBar.astro";
-import Button from "./Button.astro";
-import Logo from "./Logo.astro";
-const today = new Date();
+import BottomBar from './BottomBar.astro'
+import Button from './Button.astro'
+import Logo from './Logo.astro'
+const today = new Date()
 ---
 
 <footer>
@@ -21,9 +21,7 @@ const today = new Date();
     </Button>
   </div>
   <div class="values">
-    <div class="background-image">
-      <img src="/backgrounds/motif_sombre.svg" />
-    </div>
+    <div class="background-image"></div>
     <div class="value">
       <svg
         width="48"
@@ -269,44 +267,45 @@ const today = new Date();
     </div>
   </div>
   <BottomBar />
+
+  <style>
+    footer {
+      position: relative;
+      margin: 0 16rem;
+      padding: 3rem 3rem 0 3rem;
+    }
+    .cta {
+      padding: 1.5rem 0rem;
+      padding-left: 2rem;
+      background-color: #637ffd;
+      margin-bottom: 6.25rem;
+    }
+    .values {
+      padding: 3rem 3rem;
+      margin-bottom: 4rem;
+      display: flex;
+      flex-direction: row;
+      border: solid 1px #1d2656;
+      position: relative;
+    }
+    .values > .background-image {
+      position: absolute;
+      opacity: 0.25;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('backgrounds/motif_sombre.svg');
+      background-position: center;
+      background-size: cover;
+    }
+    .value > svg {
+      margin-bottom: 0.75rem;
+    }
+    .value > *:last-child {
+      margin-top: 0.75rem;
+      margin-bottom: 0;
+    }
+  </style>
 </footer>
-<style>
-  footer {
-    position: relative;
-    margin: 0 16rem;
-    padding: 3rem 3rem 0 3rem;
-  }
-  .cta {
-    padding: 1.5rem 0rem;
-    padding-left: 2rem;
-    background-color: #637ffd;
-    margin-bottom: 6.25rem;
-  }
-  .values {
-    padding: 3rem 3rem;
-    margin-bottom: 4rem;
-    display: flex;
-    flex-direction: row;
-    border: solid 1px #1d2656;
-    position: relative;
-  }
-  .values > .background-image {
-    position: absolute;
-    opacity: 0.25;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-/*   .background-image > img {
-    position: relative;
-  } */
-  .value > svg {
-    margin-bottom: 0.75rem;
-  }
-  .value > *:last-child {
-    margin-top: 0.75rem;
-    margin-bottom: 0;
-  }
-</style>
