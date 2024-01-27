@@ -9,17 +9,19 @@ const today = new Date()
 <footer>
   <div class="cta">
     <h3>👋 Id volutpat neque justo laoreet ac ?</h3>
-    <p>
-      Scelerisque gravida lectus nunc massa vestibulum quisque suspendisse elit.
-      Aliquam venenatis duis amet vitae odio. Condimentum turpis massa.
-    </p>
-    <Button
-      href="mailto:hello@nicolastoison.fr?subject=👋%20I%20would%20like%20to%20work%20with%20you"
-      target="_blank"
-      icon="/icons/mail.svg"
-    >
-      work with me
-    </Button>
+    <div>
+      <p>
+        Scelerisque gravida lectus nunc massa vestibulum quisque suspendisse
+        elit. Aliquam venenatis duis amet vitae odio. Condimentum turpis massa.
+      </p>
+      <Button
+        href="mailto:hello@nicolastoison.fr?subject=👋%20I%20would%20like%20to%20work%20with%20you"
+        target="_blank"
+        icon="/icons/mail.svg"
+      >
+        work with me
+      </Button>
+    </div>
   </div>
   <Values />
   <div class="footer">
@@ -50,10 +52,18 @@ const today = new Date()
       padding: 3rem 3rem 0 3rem;
     }
     .cta {
-      padding: 1.5rem 0rem;
-      padding-left: 2rem;
+      padding: 1.5rem 2rem;
       background-color: #637ffd;
       margin-bottom: 6.25rem;
+
+      & div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        & p {
+          grid-column-start: 1;
+          grid-column-end: 3;
+        }
+      }
     }
     .footer {
       display: grid;
