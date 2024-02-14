@@ -6,16 +6,48 @@ export interface ProjectTile {
   excerpt: string;
   logoPath: string;
   category: string;
-  categoryColor: string;
 }
 
-const { name, excerpt, logoPath, category, categoryColor, slug } = Astro.props;
+const { name, excerpt, category, slug } = Astro.props;
+let categoryColor = undefined;
+
+switch (category) {
+  case "web":
+    categoryColor = "#44CB8A";
+    break;
+  case "kubernetes":
+    categoryColor = "#FDD263";
+    break;
+  case "seo":
+    categoryColor = "#FDD263";
+    break;
+  case "e-commerce":
+    categoryColor = "#FDD263";
+    break;
+  case "sea":
+    categoryColor = "#FD6363";
+    break;
+  case "lean":
+    categoryColor = "#F987E6";
+    break;
+  case "scrum":
+    categoryColor = "#EB8D48";
+    break;
+  case "kanban":
+    categoryColor = "#B7E13F";
+    break;
+  case "agile":
+    categoryColor = "#3FE1D8";
+    break;
+  default:
+    categoryColor = "#44CB8A";
+}
 ---
 
 <article class="project-container">
-  <a href={`/projects/${slug}/`}
+  <a href={slug} target=""
     ><div class="first-row">
-      <img src={logoPath} alt="logo" />
+      <!-- <img src={logoPath} alt="logo" /> -->
       <Category name={category} color={categoryColor} />
     </div>
     <div class="preview-info">

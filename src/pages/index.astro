@@ -8,10 +8,8 @@ import LeftBar from "../components/LeftBar.astro";
 import Separator from "../components/Separator.astro";
 import ProjectList from "../components/ProjectList.astro";
 import BlogPosts from "../components/BlogPosts.astro";
-import BottomBar from "../components/BottomBar.astro";
 ---
 
-<!DOCTYPE html>
 <html lang="fr">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
@@ -23,9 +21,15 @@ import BottomBar from "../components/BottomBar.astro";
     <main class="content-container">
       <section class="sub-content">
         <h2>Projets</h2>
-        <p>Plongez dans mon royaume de pixels et de possibilités, où le développement web innovant rencontre le design artistique. Ce portfolio est une sélection de projets qui mettent en évidence ma capacité à transformer des concepts en expériences en ligne captivantes.</p>
-        <Separator/>
-        <ProjectList/>
+        <p>
+          Plongez dans mon royaume de pixels et de possibilités, où le
+          développement web innovant rencontre le design artistique. Ce
+          portfolio est une sélection de projets qui mettent en évidence ma
+          capacité à transformer des concepts en expériences en ligne
+          captivantes.
+        </p>
+        <Separator />
+        <ProjectList />
         <!-- <Category name="SEO" color="#FDD263"></Category>
         <Category name="E-commerce" color="#8499F7"></Category>
         <Category name="SEA" color="#FD6363"></Category>
@@ -37,9 +41,13 @@ import BottomBar from "../components/BottomBar.astro";
       </section>
       <section>
         <h2>Blog</h2>
-        <p>Hac ita persuasione reducti intra moenia bellatores obseratis undique portarum aditibus, propugnaculis insistebant et pinnis, congesta undique saxa telaque habentes in promptu.</p>
-        <Separator/>
-        <BlogPosts/>
+        <p>
+          Hac ita persuasione reducti intra moenia bellatores obseratis undique
+          portarum aditibus, propugnaculis insistebant et pinnis, congesta
+          undique saxa telaque habentes in promptu.
+        </p>
+        <Separator />
+        <BlogPosts />
       </section>
     </main>
     <Footer />
