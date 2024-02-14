@@ -23,6 +23,8 @@ const projects = raw_data.data.map((data) => {
   project_array["slug"] = data.html_url;
   return project_array;
 });
+
+console.log(raw_data.data[0]);
 ---
 
 <div class="project-list">
