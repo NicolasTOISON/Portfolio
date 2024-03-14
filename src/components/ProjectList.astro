@@ -2,36 +2,49 @@
 import ProjectPreview from "../components/ProjectPreview.astro";
 import { Octokit } from "octokit";
 
-const octokit = new Octokit({
-  auth: "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",
-});
+const octokit = new Octokit({});
 
 const raw_data = await octokit.request("GET /users/{username}/repos", {
   username: "NicolasTOISON",
+  type: "owner",
   headers: {
+    accept: "application/vnd.github+json",
     "X-GitHub-Api-Version": "2022-11-28",
   },
-  sort: "updated",
-  direction: 'desc'
+  sort: "pushed",
+  direction: "desc",
 });
 
-const projects = raw_data.data.map((data) => {
-  const project_array: Object = [];
-  project_array["title"] = data.name;
-  project_array["description"] = data.description;
-  project_array["category"] = data.topics[0];
-  project_array["slug"] = data.html_url;
-  return project_array;
-});
+type Projects = {
+  title: string;
+  description: string;
+  category?: string;
+  slug: string;
+};
 
-console.log(raw_data.data[0]);
+const projects = raw_data.data.map<any>((data: any) => {
+  if (data.topics === undefined) {
+    return {
+      title: data.name,
+      description: data.description,
+      slug: data.html_url,
+    };
+  } else {
+    return {
+      title: data.name,
+      description: data.description,
+      category: data.topics[0],
+      slug: data.html_url,
+    };
+  }
+});
 ---
 
 <div class="project-list">
   {
     projects
       .slice(0, 5)
-      .map((project) => (
+      .map((project: Projects) => (
         <ProjectPreview
           name={project.title}
           excerpt={project.description}
