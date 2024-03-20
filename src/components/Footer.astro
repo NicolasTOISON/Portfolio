@@ -18,6 +18,7 @@ const today = new Date()
         href="mailto:hello@nicolastoison.fr?subject=👋%20I%20would%20like%20to%20work%20with%20you"
         target="_blank"
         icon="/icons/mail.svg"
+        class="secondary"
       >
         work with me
       </Button>
@@ -36,10 +37,15 @@ const today = new Date()
     <div>
       Menu
       <ul>
-        <li>Home</li>
-        <li>About me</li>
-        <li>Blog</li>
-        <li>Work with me</li>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/about">About me</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li>
+          <a
+            href="mailto:hello@nicolastoison.fr?subject=👋%20I%20would%20like%20to%20work%20with%20you"
+            >Work with me</a
+          >
+        </li>
       </ul>
     </div>
   </div>
@@ -55,17 +61,12 @@ const today = new Date()
       padding: 1.5rem 2rem;
       background-color: #637ffd;
       margin-bottom: 6.25rem;
-
       & div {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        & p {
-          grid-column-start: 1;
-          grid-column-end: 11;
-        }
-        & a {
-          grid-column-start: 11;
-          grid-column-end: 13;
+        display: inline-flex;
+        align-items: center;
+        > p {
+          margin-inline-end: 2rem;
+          max-width: 35.675rem;
         }
       }
     }

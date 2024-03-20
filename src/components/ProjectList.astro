@@ -1,26 +1,26 @@
 ---
-import ProjectPreview from "../components/ProjectPreview.astro";
-import { Octokit } from "octokit";
+import ProjectPreview from '../components/ProjectPreview.astro'
+import { Octokit } from 'octokit'
 
-const octokit = new Octokit({});
+const octokit = new Octokit({})
 
-const raw_data = await octokit.request("GET /users/{username}/repos", {
-  username: "NicolasTOISON",
-  type: "owner",
+const raw_data = await octokit.request('GET /users/{username}/repos', {
+  username: 'NicolasTOISON',
+  type: 'owner',
   headers: {
-    accept: "application/vnd.github+json",
-    "X-GitHub-Api-Version": "2022-11-28",
+    accept: 'application/vnd.github+json',
+    'X-GitHub-Api-Version': '2022-11-28',
   },
-  sort: "pushed",
-  direction: "desc",
-});
+  sort: 'pushed',
+  direction: 'desc',
+})
 
 type Projects = {
-  title: string;
-  description: string;
-  category?: string;
-  slug: string;
-};
+  title: string
+  description: string
+  category?: string
+  slug: string
+}
 
 const projects = raw_data.data.map<any>((data: any) => {
   if (data.topics === undefined) {
@@ -28,16 +28,16 @@ const projects = raw_data.data.map<any>((data: any) => {
       title: data.name,
       description: data.description,
       slug: data.html_url,
-    };
+    }
   } else {
     return {
       title: data.name,
       description: data.description,
       category: data.topics[0],
       slug: data.html_url,
-    };
+    }
   }
-});
+})
 ---
 
 <div class="project-list">
