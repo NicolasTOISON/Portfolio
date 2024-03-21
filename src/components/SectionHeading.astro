@@ -15,8 +15,14 @@ const { h2, withButton = false } = Astro.props
 
 <style>
 .heading-container {
+ /*  position: relative; */
   display: inline-flex;
   align-items: center;
   height: 3.5rem;
+  width: 100%;
+  > a {
+    position: absolute;
+    right: 3rem;
+  }
 }
 </style>
