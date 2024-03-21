@@ -1,29 +1,13 @@
 ---
 import BottomBar from './BottomBar.astro'
-import Button from './Button.astro'
+import CtaSection from './CtaSection.astro'
 import Values from './Values.astro'
 import Logo from './Logo.astro'
 const today = new Date()
 ---
 
 <footer>
-  <div class="cta">
-    <h3>👋 Id volutpat neque justo laoreet ac ?</h3>
-    <div>
-      <p>
-        Scelerisque gravida lectus nunc massa vestibulum quisque suspendisse
-        elit. Aliquam venenatis duis amet vitae odio. Condimentum turpis massa.
-      </p>
-      <Button
-        href="mailto:hello@nicolastoison.fr?subject=👋%20I%20would%20like%20to%20work%20with%20you"
-        target="_blank"
-        icon="/icons/mail.svg"
-        class="secondary"
-      >
-        work with me
-      </Button>
-    </div>
-  </div>
+  <CtaSection />
   <Values />
   <div class="footer">
     <div>
@@ -57,19 +41,7 @@ const today = new Date()
       margin: 0 16rem;
       padding: 3rem 3rem 0 3rem;
     }
-    .cta {
-      padding: 1.5rem 2rem;
-      background-color: #637ffd;
-      margin-bottom: 6.25rem;
-      & div {
-        display: inline-flex;
-        align-items: center;
-        > p {
-          margin-inline-end: 2rem;
-          max-width: 35.675rem;
-        }
-      }
-    }
+
     .footer {
       display: grid;
       grid-template-columns: repeat(3, 1fr);

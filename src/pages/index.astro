@@ -8,6 +8,7 @@ import LeftBar from '../components/LeftBar.astro'
 import Separator from '../components/Separator.astro'
 import ProjectList from '../components/ProjectList.astro'
 import BlogPosts from '../components/BlogPosts.astro'
+import SectionHeading from '../components/SectionHeading.astro'
 ---
 
 <html lang="fr">
@@ -20,25 +21,25 @@ import BlogPosts from '../components/BlogPosts.astro'
     <RightBar hidden />
     <main class="content-container">
       <section class="sub-content">
-        <h2>Projets</h2>
-        <p>
-          Plongez dans mon royaume de pixels et de possibilités, où le
-          développement web innovant rencontre le design artistique. Ce
-          portfolio est une sélection de projets qui mettent en évidence ma
-          capacité à transformer des concepts en expériences en ligne
-          captivantes.
-        </p>
-        <Separator />
+        <SectionHeading h2="Projets">
+          <p>
+            Plongez dans mon royaume de pixels et de possibilités, où le
+            développement web innovant rencontre le design artistique. Ce
+            portfolio est une sélection de projets qui mettent en évidence ma
+            capacité à transformer des concepts en expériences en ligne
+            captivantes.
+          </p>
+        </SectionHeading>
         <!-- <ProjectList /> -->
       </section>
       <section>
-        <h2>Blog</h2>
-        <p>
-          Hac ita persuasione reducti intra moenia bellatores obseratis undique
-          portarum aditibus, propugnaculis insistebant et pinnis, congesta
-          undique saxa telaque habentes in promptu.
-        </p>
-        <Separator />
+        <SectionHeading h2="Blog" withButton="true">
+          <p>
+            Hac ita persuasione reducti intra moenia bellatores obseratis
+            undique portarum aditibus, propugnaculis insistebant et pinnis,
+            congesta undique saxa telaque habentes in promptu.
+          </p>
+        </SectionHeading>
         <BlogPosts />
       </section>
     </main>

@@ -1,0 +1,36 @@
+---
+import Button from './Button.astro'
+---
+
+<div class="cta">
+  <h3>👋 Id volutpat neque justo laoreet ac ?</h3>
+  <div>
+    <p>
+      Scelerisque gravida lectus nunc massa vestibulum quisque suspendisse elit.
+      Aliquam venenatis duis amet vitae odio. Condimentum turpis massa.
+    </p>
+    <Button
+      href="mailto:hello@nicolastoison.fr?subject=👋%20I%20would%20like%20to%20work%20with%20you"
+      target="_blank"
+      icon="/icons/mail.svg"
+      class="secondary"
+    >
+      work with me
+    </Button>
+  </div>
+</div>
+<style>
+  .cta {
+    padding: 1.5rem 2rem;
+    background-color: #637ffd;
+    margin-bottom: 6.25rem;
+    & div {
+      display: inline-flex;
+      align-items: center;
+      > p {
+        margin-inline-end: 2rem;
+        max-width: 35.675rem;
+      }
+    }
+  }
+</style>
