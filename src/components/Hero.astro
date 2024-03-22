@@ -1,12 +1,12 @@
 ---
-import Header from "../components/Header.astro";
-import Button from "./Button.astro";
+import Header from '../components/Header.astro'
+import Button from './Button.astro'
 
-const yearBeginningDeveloping = new Date("2012").getFullYear();
-const yearBeginningFreelancing = new Date("2020").getFullYear();
-const today = new Date().getFullYear();
-const yearsOfExperience = today - yearBeginningDeveloping;
-const yearsOfFreelancing = today - yearBeginningFreelancing;
+const yearBeginningDeveloping = new Date('2012').getFullYear()
+const yearBeginningFreelancing = new Date('2020').getFullYear()
+const today = new Date().getFullYear()
+const yearsOfExperience = today - yearBeginningDeveloping
+const yearsOfFreelancing = today - yearBeginningFreelancing
 ---
 
 <div class="homepage-container">
@@ -21,7 +21,7 @@ const yearsOfFreelancing = today - yearBeginningFreelancing;
       postes dans le domaine du développent logiciel depuis {yearsOfExperience}
       ans et suis Freelance depuis {yearsOfFreelancing} ans.
     </h1>
-    <Button href="/about" icon="/icons/home.svg">ABOUT ME</Button>
+    <Button href="/a-propos" icon="/icons/user.svg">A propos</Button>
   </div>
   <img
     class="icon-scroll-down"
@@ -48,8 +48,8 @@ const yearsOfFreelancing = today - yearBeginningFreelancing;
   }
   .hero-container {
     position: relative;
-    top: 127px;
-    left: 176px;
+    /* top: calc(8rem - 10rem); */
+    left: 11rem;
     font-size: 64px;
     font-weight: 500;
     width: 40%;

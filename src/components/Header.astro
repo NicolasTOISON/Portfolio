@@ -1,31 +1,32 @@
 ---
-import NavBar from "./NavBar.astro";
+import NavBar from './NavBar.astro'
 ---
 
 <header class="hero-navbar">
-  <NavBar position="top"/>
+  <NavBar position="top" />
 </header>
 <!-- Custom script -->
 <script type="text/javascript" defer async>
-  var prevScrollpos = window.scrollY;
+  const halfWindowSize = window.innerHeight / 2
+  var prevScrollpos = window.scrollY
 
   window.onscroll = function () {
-    var currentScrollPos = window.scrollY;
+    var currentScrollPos = window.scrollY
     if (prevScrollpos > currentScrollPos) {
-      if (currentScrollPos < 800) {
-        document.querySelector(".hero-navbar").style.display = "inline-flex";
-        document.querySelector(".left-navbar").style.display = "none";
-        document.querySelector(".rightbar").style.display = "none";
+      if (currentScrollPos < halfWindowSize) {
+        document.querySelector('.hero-navbar').style.display = 'inline-flex'
+        document.querySelector('.left-navbar').style.display = 'none'
+        document.querySelector('.rightbar').style.display = 'none'
       }
     } else {
-      if (currentScrollPos > 800) {
-        document.querySelector(".hero-navbar").style.display = "none";
-        document.querySelector(".left-navbar").style.display = "inline-flex";
-        document.querySelector(".rightbar").style.display = "inline-flex";
+      if (currentScrollPos > halfWindowSize) {
+        document.querySelector('.hero-navbar').style.display = 'none'
+        document.querySelector('.left-navbar').style.display = 'inline-flex'
+        document.querySelector('.rightbar').style.display = 'inline-flex'
       }
     }
-    prevScrollpos = currentScrollPos;
-  };
+    prevScrollpos = currentScrollPos
+  }
 </script>
 <style>
   header {

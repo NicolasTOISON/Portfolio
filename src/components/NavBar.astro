@@ -1,19 +1,19 @@
 ---
-import HeaderLink from "./HeaderLink.astro";
-import Logo from "./Logo.astro";
-import SocialLinks from "./SocialLinks.astro";
+import HeaderLink from './HeaderLink.astro'
+import Logo from './Logo.astro'
+import SocialLinks from './SocialLinks.astro'
 
-const { border, position, showSocial } = Astro.props;
+const { border, position, showSocial } = Astro.props
 ---
 
 {border ? <Logo bordered /> : <Logo />}
 <nav class:list={[position]}>
-  <HeaderLink href="/" icon="/icons/home.svg" class="icon">HOME</HeaderLink>
-  <HeaderLink href="/about" icon="/icons/user.svg" class="icon">
-    ABOUT ME
+  <HeaderLink href="/" icon="/icons/home.svg" class="icon">Accueil</HeaderLink>
+  <HeaderLink href="/a-propos" icon="/icons/user.svg" class="icon">
+    A propos
   </HeaderLink>
   <HeaderLink href="/blog" icon="/icons/comment.svg" class="icon">
-    BLOG
+    Blog
   </HeaderLink>
 </nav>
 {showSocial ? <SocialLinks /> : <div />}
