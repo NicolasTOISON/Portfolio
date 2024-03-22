@@ -1,0 +1,70 @@
+---
+import BaseHead from '../components/BaseHead.astro'
+import Footer from '../components/Footer.astro'
+import LeftBar from '../components/LeftBar.astro'
+import RightBar from '../components/RightBar.astro'
+
+const { frontmatter } = Astro.props
+---
+
+<html lang="fr">
+  <head>
+    <BaseHead title={frontmatter.title} description={frontmatter.description} />
+    <!-- <style>
+      .title {
+        font-size: 2em;
+        margin: 0.25em 0 0;
+      }
+      hr {
+        border-top: 1px solid #ddd;
+        margin: 1rem 0;
+      } -->
+  </head>
+
+  <body>
+    <LeftBar />
+    <RightBar />
+    <main class="content-container">
+      <article>
+        <div class="header">
+          <div class="illustration-container">
+            <img src="/illustrations/pp.svg" />
+          </div>
+          <div class="title-container">
+            <h1>{frontmatter.title}</h1>
+            <p>{frontmatter.intro}</p>
+          </div>
+        </div>
+        <slot />
+      </article>
+    </main>
+    <Footer />
+    <style>
+      .header {
+        display: inline-flex;
+        height: 256px;
+      }
+
+      .illustration-container {
+        margin-inline-start: 3rem;
+        margin-block: 2rem;
+        min-width: 16rem;
+        > img {
+          height: auto;
+        }
+      }
+      .title-container {
+        padding-inline-start: 2rem;
+        > h1 {
+          color: rgba(255, 255, 255, 0.85);
+          font-size: 3.25rem;
+          font-weight: 400;
+          margin-block-start: 3rem;
+          margin-block-end: 1rem;
+        }
+        > p {
+        }
+      }
+    </style>
+  </body>
+</html>
