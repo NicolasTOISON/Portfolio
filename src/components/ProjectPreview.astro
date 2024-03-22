@@ -1,40 +1,40 @@
 ---
-import Category from "../components/Category.astro";
+import Category from '../components/Category.astro'
 
 export interface ProjectTile {
-  name: string;
-  excerpt: string;
-  logoPath: string;
-  category: string;
+  name: string
+  excerpt: string
+  logoPath: string
+  category: string
 }
 
-const { name, excerpt, category, slug } = Astro.props;
-let categoryColor = undefined;
+const { name, excerpt, category, slug } = Astro.props
+let categoryColor = undefined
 
 switch (category) {
-  case "web":
-    categoryColor = "#44CB8A";
-    break;
-  case "kubernetes":
-    categoryColor = "#FDD263";
-    break;
-  case "typescript":
-    categoryColor = "#FD6363";
-    break;
-  case "vscode":
-    categoryColor = "#F987E6";
-    break;
-  case "admin-system":
-    categoryColor = "#EB8D48";
-    break;
-  case "kanban":
-    categoryColor = "#B7E13F";
-    break;
-  case "agile":
-    categoryColor = "#3FE1D8";
-    break;
+  case 'web':
+    categoryColor = '#44CB8A'
+    break
+  case 'kubernetes':
+    categoryColor = '#FDD263'
+    break
+  case 'typescript':
+    categoryColor = '#FD6363'
+    break
+  case 'vscode':
+    categoryColor = '#F987E6'
+    break
+  case 'admin-system':
+    categoryColor = '#EB8D48'
+    break
+  case 'react':
+    categoryColor = '#B7E13F'
+    break
+  case 'agile':
+    categoryColor = '#3FE1D8'
+    break
   default:
-    categoryColor = "#44CB8A";
+    categoryColor = '#44CB8A'
 }
 ---
 
@@ -53,6 +53,9 @@ switch (category) {
   .project-container {
     display: grid;
     border: solid 1px #1d2656;
+    > a {
+      text-decoration: none;
+    }
   }
   .project-container:hover {
     background-color: #637ffd;

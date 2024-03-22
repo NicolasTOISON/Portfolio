@@ -23,7 +23,7 @@ const { frontmatter } = Astro.props
           </div>
           <div class="title-container">
             <h1>{frontmatter.title}</h1>
-            <p>{frontmatter.intro}</p>
+            <span>{frontmatter.intro}</span>
           </div>
         </div>
         <slot />
@@ -53,7 +53,13 @@ const { frontmatter } = Astro.props
           margin-block-start: 3rem;
           margin-block-end: 1rem;
         }
-        > p {
+      }
+      article {
+        > p:nth-child(2)::first-letter {
+          initial-letter: 4 5;
+          padding: 1rem;
+          margin-inline-end: 1rem;
+          border: solid 1px #637ffd;
         }
       }
     </style>
