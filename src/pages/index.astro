@@ -1,14 +1,13 @@
 ---
 import BaseHead from '../components/BaseHead.astro'
+import Section from '../components/Section.astro'
 import Hero from '../components/Hero.astro'
 import Footer from '../components/Footer.astro'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
 import RightBar from '../components/RightBar.astro'
 import LeftBar from '../components/LeftBar.astro'
-import Separator from '../components/Separator.astro'
 import ProjectList from '../components/ProjectList.astro'
 import BlogPosts from '../components/BlogPosts.astro'
-import SectionHeading from '../components/SectionHeading.astro'
 ---
 
 <html lang="fr">
@@ -20,28 +19,30 @@ import SectionHeading from '../components/SectionHeading.astro'
     <LeftBar hidden />
     <RightBar hidden />
     <main class="content-container">
-      <section class="sub-content">
-        <SectionHeading h2="Projets">
-          <p>
-            Plongez dans mon royaume de pixels et de possibilités, où le
-            développement web innovant rencontre le design artistique. Ce
-            portfolio est une sélection de projets qui mettent en évidence ma
-            capacité à transformer des concepts en expériences en ligne
-            captivantes.
-          </p>
-        </SectionHeading>
+      <Section header="Side Projects">
+        <p>
+          Plongez dans mon royaume de pixels et de possibilités, où le
+          développement web innovant rencontre le design artistique. Ce
+          portfolio est une sélection de projets qui mettent en évidence ma
+          capacité à transformer des concepts en expériences en ligne
+          captivantes.
+        </p>
         <!-- <ProjectList /> -->
-      </section>
-      <section>
-        <SectionHeading h2="Blog" withButton="true">
-          <p>
-            Hac ita persuasione reducti intra moenia bellatores obseratis
-            undique portarum aditibus, propugnaculis insistebant et pinnis,
-            congesta undique saxa telaque habentes in promptu.
-          </p>
-        </SectionHeading>
+      </Section>
+      <Section
+        header="Blog"
+        withButton="true"
+        buttonLink="/blog"
+        iconPath="/icons/right-arrow.svg"
+        buttonText="Tous les articles"
+      >
+        <p>
+          Hac ita persuasione reducti intra moenia bellatores obseratis undique
+          portarum aditibus, propugnaculis insistebant et pinnis, congesta
+          undique saxa telaque habentes in promptu.
+        </p>
         <BlogPosts />
-      </section>
+      </Section>
     </main>
     <Footer />
   </body>
