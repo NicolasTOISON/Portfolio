@@ -1,14 +1,14 @@
 ---
 export interface HeaderLink {
-  href: string;
-  icon: string;
-  class: string;
+  href: string
+  icon: string
+  class: string
 }
 
-const { href, icon, class: className } = Astro.props;
+const { href, icon, class: className } = Astro.props
 
-const { pathname } = Astro.url;
-const isActive = href === pathname || href === pathname.replace(/\/$/, "");
+const { pathname } = Astro.url
+const isActive = href === pathname || href === pathname.replace(/\/$/, '')
 ---
 
 <a href={href} class:list={[className, { active: isActive }]}>
@@ -20,27 +20,59 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, "");
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    margin-left: 2rem;
-    margin-bottom: 2rem;
+    margin-inline-start: 2rem;
+    margin-block-end: 2rem;
   }
+
   a:first-child {
-    margin-top: 2rem;
+    margin-block-start: 2rem;
   }
+
+  a.no-margin:first-child {
+    margin-block-start: 0;
+  }
+
+  a:hover {
+    color: #637ffd;
+  }
+
+  a.active {
+    color: #637ffd;
+  }
+
+  a.active > img {
+    color: #637ffd;
+    filter: invert(42%) sepia(57%) saturate(1920%) hue-rotate(213deg)
+      brightness(103%) contrast(98%);
+  }
+
+  a.active:hover {
+    color: white;
+  }
+  a.active:hover > img {
+    filter: invert(100%);
+  }
+
+  a.no-margin {
+    margin-inline-start: 0;
+    margin-block-end: 0;
+  }
+
   img {
     margin: auto;
     padding-right: 12px;
     filter: invert(100%);
   }
-  a.active {
-    color: #637ffd;
-  }
-  a:hover {
-    color: #637ffd;
-  }
+
   a:hover > img {
     color: #637ffd;
     filter: invert(42%) sepia(57%) saturate(1920%) hue-rotate(213deg)
       brightness(103%) contrast(98%);
+  }
+
+  a:hover > img.active {
+    color: #637ffd;
+    filter: invert(100%);
   }
   /**
   * Tool to compute filter based on the targeted color : https://codepen.io/sosuke/pen/Pjoqqp
