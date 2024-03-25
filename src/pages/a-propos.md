@@ -1,7 +1,7 @@
 ---
-layout: '../layouts/AboutTemplate.astro'
-title: 'Mon parcours'
-description: 'Lorem ipsum dolor sit amet'
+layout: "../layouts/AboutTemplate.astro"
+title: "Mon parcours"
+description: "Lorem ipsum dolor sit amet"
 intro: "Je suis passionné de technologie depuis toujours, j'ai occupé plusieurs postes dans l'univers du développent logiciel depuis 7 ans et suis Freelance depuis 3 ans."
 ---
 

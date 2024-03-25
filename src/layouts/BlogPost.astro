@@ -52,30 +52,45 @@ const updateDateInFrench = convertToFrenchDateFormat(updatedDate)
       <article>
         <h1 class="title">{title}</h1>
         <Separator />
-        <Category name={category} color={categoryColor} />
-        {
-          updatedDate && (
-            <span>
-              Mise en ligne :
-              <time datetime={pubDate.toISOString()}>{pubDateInFrench}</time>
-            </span>
-          )
-        } -
-        {
-          updatedDate && (
-            <span>
-              Mise à jour le :
-              <time datetime={updatedDate.toISOString()}>
-                {updateDateInFrench}
-              </time>
-            </span>
-          )
-        }
+        <div class="metadata">
+          <Category name={category} color={categoryColor} />
+          {
+            updatedDate && (
+              <span>
+                Mis en ligne :
+                <time datetime={pubDate.toISOString()}>{pubDateInFrench}</time>
+              </span>
+            )
+          } -
+          {
+            updatedDate && (
+              <span>
+                Mis à jour le :
+                <time datetime={updatedDate.toISOString()}>
+                  {updateDateInFrench}
+                </time>
+              </span>
+            )
+          }
+
+        </div>
+        <p>{description}</p>
         <Separator />
         {heroImage && <img width={720} height={360} src={heroImage} alt="" />}
         <slot />
       </article>
     </main>
     <Footer />
+    <style>
+      .metadata {
+        display: inline-flex;
+        align-items: center;
+        & > span {
+          font-weight: 700;
+        }
+        > *:nth-child(2) {
+        margin-inline-start: 2rem;
+      }
+    </style>
   </body>
 </html>
