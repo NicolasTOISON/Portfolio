@@ -1,9 +1,10 @@
 ---
-import HeaderLink from './HeaderLink.astro'
-import Logo from './Logo.astro'
-import SocialLinks from './SocialLinks.astro'
+import BurgerMenu from "./BurgerMenu.astro";
+import HeaderLink from "./HeaderLink.astro";
+import Logo from "./Logo.astro";
+import SocialLinks from "./SocialLinks.astro";
 
-const { border, position, showSocial } = Astro.props
+const { border, position, showSocial } = Astro.props;
 ---
 
 {border ? <Logo bordered /> : <Logo />}
@@ -16,6 +17,7 @@ const { border, position, showSocial } = Astro.props
     Blog
   </HeaderLink>
 </nav>
+<BurgerMenu />
 {showSocial ? <SocialLinks /> : <div />}
 <style>
   .top {
@@ -35,5 +37,20 @@ const { border, position, showSocial } = Astro.props
   .left > a {
     margin-bottom: 32px;
     margin-left: 48px;
+  }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    nav {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  }
+
+  @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  }
+
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width: 1025px) {
   }
 </style>

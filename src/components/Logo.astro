@@ -6,7 +6,6 @@ const { bordered } = Astro.props;
   <img
     src="/logo/logo_sombre.svg"
     alt="Logo de Nicolas TOISON"
-    width="130px"
     loading="eager"
   />
 </a>
@@ -19,5 +18,23 @@ const { bordered } = Astro.props;
     margin: 0;
     padding: 48px 68px;
     border-bottom: solid 1px #1d2656;
+  }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    a {
+      margin: 1.5rem;
+      > img {
+        height: 47px;
+      }
+    }
+  }
+
+  @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  }
+
+  @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  }
+
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width: 1025px) {
   }
 </style>

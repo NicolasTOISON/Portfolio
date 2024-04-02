@@ -1,5 +1,5 @@
 ---
-import NavBar from './NavBar.astro'
+import NavBar from "./NavBar.astro";
 ---
 
 <header class="hero-navbar">
@@ -7,25 +7,27 @@ import NavBar from './NavBar.astro'
 </header>
 <!-- Custom script -->
 <script type="text/javascript" defer async>
-  const halfWindowSize = window.innerHeight / 2
-  var prevScrollpos = window.scrollY
+  if (window.screen.width > 480) {
+    const halfWindowSize = window.innerHeight / 2;
+    var prevScrollpos = window.scrollY;
 
-  window.onscroll = function () {
-    var currentScrollPos = window.scrollY
-    if (prevScrollpos > currentScrollPos) {
-      if (currentScrollPos < halfWindowSize) {
-        document.querySelector('.hero-navbar').style.display = 'inline-flex'
-        document.querySelector('.left-navbar').style.display = 'none'
-        document.querySelector('.rightbar').style.display = 'none'
+    window.onscroll = function () {
+      var currentScrollPos = window.scrollY;
+      if (prevScrollpos > currentScrollPos) {
+        if (currentScrollPos < halfWindowSize) {
+          document.querySelector(".hero-navbar").style.display = "inline-flex";
+          document.querySelector(".left-navbar").style.display = "none";
+          document.querySelector(".rightbar").style.display = "none";
+        }
+      } else {
+        if (currentScrollPos > halfWindowSize) {
+          document.querySelector(".hero-navbar").style.display = "none";
+          document.querySelector(".left-navbar").style.display = "inline-flex";
+          document.querySelector(".rightbar").style.display = "inline-flex";
+        }
       }
-    } else {
-      if (currentScrollPos > halfWindowSize) {
-        document.querySelector('.hero-navbar').style.display = 'none'
-        document.querySelector('.left-navbar').style.display = 'inline-flex'
-        document.querySelector('.rightbar').style.display = 'inline-flex'
-      }
-    }
-    prevScrollpos = currentScrollPos
+      prevScrollpos = currentScrollPos;
+    };
   }
 </script>
 <style>
@@ -34,5 +36,18 @@ import NavBar from './NavBar.astro'
     z-index: 1;
     display: inline-flex;
     align-items: center;
+  }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    
+  }
+
+  @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  }
+
+  @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  }
+
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width: 1025px) {
   }
 </style>

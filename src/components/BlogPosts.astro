@@ -29,4 +29,20 @@ const posts = (await getCollection("blog")).sort(
     grid-template-columns: repeat(3, 1fr);
     column-gap: 32px;
   }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .posts-list {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  }
+
+  @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  }
+
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width: 1025px) {
+  }
 </style>

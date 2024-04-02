@@ -1,10 +1,10 @@
 ---
-import Button from './Button.astro'
+import Button from "./Button.astro";
 
-const { hidden } = Astro.props
+const { hidden } = Astro.props;
 ---
 
-<aside class:list={['rightbar', { hidden }]}>
+<aside class:list={["rightbar", { hidden }]}>
   <div class="rightbar-inner-container">
     <span>👋</span>
     <span>Vous avez une idée ou un projet ?</span>
@@ -45,5 +45,20 @@ const { hidden } = Astro.props
   .rightbar-inner-container span:first-child {
     font-weight: 700;
     font-size: 48px;
+  }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .rightbar {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  }
+
+  @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  }
+
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width: 1025px) {
   }
 </style>

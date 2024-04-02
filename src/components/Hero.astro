@@ -1,12 +1,12 @@
 ---
-import Header from '../components/Header.astro'
-import Button from './Button.astro'
+import Header from "../components/Header.astro";
+import Button from "./Button.astro";
 
-const yearBeginningDeveloping = new Date('2012').getFullYear()
-const yearBeginningFreelancing = new Date('2020').getFullYear()
-const today = new Date().getFullYear()
-const yearsOfExperience = today - yearBeginningDeveloping
-const yearsOfFreelancing = today - yearBeginningFreelancing
+const yearBeginningDeveloping = new Date("2012").getFullYear();
+const yearBeginningFreelancing = new Date("2020").getFullYear();
+const today = new Date().getFullYear();
+const yearsOfExperience = today - yearBeginningDeveloping;
+const yearsOfFreelancing = today - yearBeginningFreelancing;
 ---
 
 <div class="homepage-container">
@@ -48,15 +48,14 @@ const yearsOfFreelancing = today - yearBeginningFreelancing
   }
   .hero-container {
     position: relative;
-    /* top: calc(8rem - 10rem); */
     left: 11rem;
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 500;
     width: 40%;
   }
   .hero-container > h1 {
     color: rgba(255, 255, 255, 0.85);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
   }
   .accentued {
@@ -66,5 +65,29 @@ const yearsOfFreelancing = today - yearBeginningFreelancing
     position: absolute;
     bottom: 10px;
     left: 50%;
+  }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .homepage-container {
+      max-width: fit-content;
+    }
+    lottie-player {
+      display: none;
+    }
+    .hero-container {
+      width: unset;
+      left: 1.5rem;
+      right: 1.5rem;
+      font-size: 3rem;
+    }
+  }
+
+  @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  }
+
+  @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  }
+
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width: 1025px) {
   }
 </style>

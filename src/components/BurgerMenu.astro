@@ -1,0 +1,88 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+---
+
+<button class="open-button" popovertarget="burger-menu">
+  <img src="/icons/burger.svg" alt="" />
+</button>
+<nav popover id="burger-menu">
+  <button
+    class="close-button"
+    popovertarget="burger-menu"
+    popovertargetaction="hide"
+  >
+    <img src="/icons/close.svg" alt="" />
+  </button>
+  <ul>
+    <li>
+      <HeaderLink href="/" icon="/icons/home.svg" class="icon">
+        Accueil
+      </HeaderLink>
+    </li>
+    <li>
+      <HeaderLink href="/a-propos" icon="/icons/user.svg" class="icon">
+        A propos
+      </HeaderLink>
+    </li>
+    <li>
+      <HeaderLink href="/blog" icon="/icons/comment.svg" class="icon">
+        Blog
+      </HeaderLink>
+    </li>
+  </ul>
+</nav>
+<style>
+  .open-button {
+    position: absolute;
+    top: 1.75rem;
+    right: 0rem;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  .close-button {
+    position: absolute;
+    top: 1.75rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  #burger-menu {
+    width: 100%;
+    height: 100%;
+    background-color: #0c102c;
+
+    /*  undo popover styles  */
+    border: none;
+    padding: 0;
+    margin: 0;
+    left: auto;
+
+    /*  animate  */
+    transition:
+      translate 0.5s ease-out,
+      display 0.5s ease-out allow-discrete,
+      overlay 0.5s ease-out allow-discrete;
+
+    &::backdrop {
+      opacity: 0;
+      background: rgba(0, 0, 0, 0.5);
+      transition: opacity 0.5s;
+    }
+
+    &:popover-open {
+      translate: 0 0;
+
+      &::backdrop {
+        opacity: 1;
+      }
+
+      @starting-style {
+        &::backdrop {
+          opacity: 0;
+        }
+      }
+    }
+  }
+</style>

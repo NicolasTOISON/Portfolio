@@ -1,17 +1,17 @@
 ---
-import Category from './Category.astro'
+import Category from "./Category.astro";
 
 export interface PostPreview {
-  title: string
-  description: string
-  heroImage: string
-  category: string
-  categoryColor: string
-  slug: string
+  title: string;
+  description: string;
+  heroImage: string;
+  category: string;
+  categoryColor: string;
+  slug: string;
 }
 
 const { title, description, heroImage, category, categoryColor, slug } =
-  Astro.props
+  Astro.props;
 ---
 
 <article class="blog-container">
@@ -72,5 +72,31 @@ const { title, description, heroImage, category, categoryColor, slug } =
   }
   .preview-info > *:last-child {
     margin: 0.5rem 0rem 0rem 0rem;
+  }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .blog-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-container:first-child {
+      display: flex;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      column-gap: 2rem;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      padding-bottom: 2rem;
+      border-bottom: solid 1px #1d2656;
+    }
+  }
+
+  @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  }
+
+  @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  }
+
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width: 1025px) {
   }
 </style>

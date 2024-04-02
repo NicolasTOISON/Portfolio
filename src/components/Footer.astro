@@ -1,9 +1,9 @@
 ---
-import BottomBar from './BottomBar.astro'
-import CtaSection from './CtaSection.astro'
-import Values from './Values.astro'
-import Logo from './Logo.astro'
-const today = new Date()
+import BottomBar from "./BottomBar.astro";
+import CtaSection from "./CtaSection.astro";
+import Values from "./Values.astro";
+import Logo from "./Logo.astro";
+const today = new Date();
 ---
 
 <footer>
@@ -34,38 +34,54 @@ const today = new Date()
     </div>
   </div>
   <BottomBar />
+</footer>
+<style>
+  footer {
+    position: relative;
+    margin: 0 16rem;
+    padding: 3rem 3rem 0 3rem;
+  }
 
-  <style>
-    footer {
-      position: relative;
-      margin: 0 16rem;
-      padding: 3rem 3rem 0 3rem;
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: max-content;
+    margin-bottom: 4rem;
+    & div:first-child {
+      grid-column-start: 1;
+      grid-column-end: 3;
     }
-
-    .footer {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      height: max-content;
-      margin-bottom: 4rem;
-      & div:first-child {
-        grid-column-start: 1;
-        grid-column-end: 3;
-      }
-      & div:last-child {
-        font-weight: 700;
-        font-size: 1.5rem;
-        margin-inline-start: 5rem;
-        ul {
-          font-weight: 400;
-          font-size: 1rem;
-          padding-left: 0;
-          line-height: 1.5rem;
-          li {
-            list-style: none;
-            margin-bottom: 0.75rem;
-          }
+    & div:last-child {
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-inline-start: 5rem;
+      ul {
+        font-weight: 400;
+        font-size: 1rem;
+        padding-left: 0;
+        line-height: 1.5rem;
+        li {
+          list-style: none;
+          margin-bottom: 0.75rem;
         }
       }
     }
-  </style>
-</footer>
+  }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    footer {
+    position: relative;
+    margin: 0 1rem;
+    padding: 0;
+  }
+  }
+
+  @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  }
+
+  @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  }
+
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width: 1025px) {
+  }
+</style>

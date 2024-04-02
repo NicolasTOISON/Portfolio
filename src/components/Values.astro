@@ -256,7 +256,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/backgrounds/motif_sombre.svg');
+    background-image: url("/backgrounds/motif_sombre.svg");
     background-position: center;
     background-size: cover;
   }
@@ -266,5 +266,27 @@
   .value > *:last-child {
     margin-top: 0.75rem;
     margin-bottom: 0;
+  }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .values {
+      padding: 1rem 1rem;
+      margin-bottom: 1rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      gap: 2rem;
+      border: solid 1px #1d2656;
+      position: relative;
+    }
+  }
+
+  @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  }
+
+  @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  }
+
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width: 1025px) {
   }
 </style>
