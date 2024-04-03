@@ -3,7 +3,6 @@ import BottomBar from "./BottomBar.astro";
 import CtaSection from "./CtaSection.astro";
 import Values from "./Values.astro";
 import Logo from "./Logo.astro";
-const today = new Date();
 ---
 
 <footer>
@@ -18,7 +17,7 @@ const today = new Date();
         mécaniques ⚙️
       </p>
     </div>
-    <div>
+    <div class="footer-menu">
       Menu
       <ul>
         <li><a href="/">Accueil</a></li>
@@ -67,12 +66,25 @@ const today = new Date();
       }
     }
   }
+
+  .footer-menu {
+    & > ul > li > * {
+      text-decoration: none;
+    }
+    & *:hover {
+      color: #637ffd;
+    }
+  }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     footer {
-    position: relative;
-    margin: 0 1rem;
-    padding: 0;
-  }
+      position: relative;
+      margin: 0 1rem;
+      padding: 0;
+    }
+    .footer {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+    }
   }
 
   @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {

@@ -1,5 +1,5 @@
 ---
-const today = new Date()
+const today = new Date();
 ---
 
 <div class="bottom-bar">
@@ -18,5 +18,22 @@ const today = new Date()
   }
   span {
     margin-right: 2rem;
+  }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .bottom-bar {
+      margin-inline-end: -1rem;
+    }
+    span {
+    }
+  }
+
+  @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  }
+
+  @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  }
+
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width: 1025px) {
   }
 </style>

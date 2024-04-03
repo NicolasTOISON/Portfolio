@@ -20,7 +20,7 @@ import Separator from '../components/Separator.astro'
     <LeftBar hidden />
     <RightBar hidden />
     <main class="content-container">
-      <Section header="Side Projects">
+      <Section id="projects" header="Side Projects">
         <p>
           Plongez dans mon royaume de pixels et de possibilités, où le
           développement web innovant rencontre le design artistique. Ce
@@ -29,9 +29,10 @@ import Separator from '../components/Separator.astro'
           captivantes.
         </p>
         <Separator></Separator>
-        <ProjectList />
+        <!-- <ProjectList /> -->
       </Section>
       <Section
+        id="blog"
         header="Blog"
         withButton="true"
         buttonLink="/blog"
