@@ -1,5 +1,4 @@
 ---
-import Separator from './Separator.astro'
 import Button from './Button.astro'
 
 
@@ -19,7 +18,6 @@ const { header, withButton = false, buttonLink, iconPath, buttonText } = Astro.p
     <Button href={buttonLink}
           icon={iconPath}>{buttonText}</Button> : <></>}</div>
   <slot />
-  <Separator />
 </section>
 <style>
   .heading-container {

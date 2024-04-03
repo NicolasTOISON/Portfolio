@@ -35,9 +35,11 @@ const { title, description, heroImage, category, categoryColor, slug } =
     display: grid;
   }
   .blog-container:hover {
-    /* border: solid 1px #637ffd; */
-    background-color: #637ffd;
+    & * > h3 {
+      color: #637FFD;
+    }
   }
+
   .blog-container:first-child {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

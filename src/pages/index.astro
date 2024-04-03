@@ -8,6 +8,7 @@ import RightBar from '../components/RightBar.astro'
 import LeftBar from '../components/LeftBar.astro'
 import ProjectList from '../components/ProjectList.astro'
 import BlogPosts from '../components/BlogPosts.astro'
+import Separator from '../components/Separator.astro'
 ---
 
 <html lang="fr">
@@ -27,7 +28,8 @@ import BlogPosts from '../components/BlogPosts.astro'
           capacité à transformer des concepts en expériences en ligne
           captivantes.
         </p>
-        <!-- <ProjectList /> -->
+        <Separator></Separator>
+        <ProjectList />
       </Section>
       <Section
         header="Blog"
@@ -41,6 +43,7 @@ import BlogPosts from '../components/BlogPosts.astro'
           portarum aditibus, propugnaculis insistebant et pinnis, congesta
           undique saxa telaque habentes in promptu.
         </p>
+        <Separator></Separator>
         <BlogPosts />
       </Section>
     </main>
