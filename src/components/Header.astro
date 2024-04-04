@@ -9,11 +9,17 @@ import NavBar from "./NavBar.astro";
 <script type="text/javascript" defer async is:inline>
   if (
     window.location.pathname.match("/blog") ||
-    window.location.pathname.match("/a-propos") 
+    window.location.pathname.match("/a-propos")
   ) {
-    document.querySelector(".hero-navbar").style.display = "none";
-    document.querySelector(".left-navbar").style.display = "inline-flex";
-    document.querySelector(".rightbar").style.display = "inline-flex";
+    if (window.screen.width > 480) {
+      document.querySelector(".hero-navbar").style.display = "none";
+      document.querySelector(".left-navbar").style.display = "inline-flex";
+      document.querySelector(".rightbar").style.display = "inline-flex";
+    } else {
+      document.querySelector(".hero-navbar").style.display = "inline-flex";
+      document.querySelector(".left-navbar").style.display = "none";
+      document.querySelector(".rightbar").style.display = "none";
+    }
   } else {
     if (window.screen.width > 480) {
       const halfWindowSize = window.innerHeight / 2;
