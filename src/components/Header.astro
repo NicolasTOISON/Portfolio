@@ -6,28 +6,39 @@ import NavBar from "./NavBar.astro";
   <NavBar position="top" />
 </header>
 <!-- Custom script -->
-<script type="text/javascript" defer async>
-  if (window.screen.width > 480) {
-    const halfWindowSize = window.innerHeight / 2;
-    var prevScrollpos = window.scrollY;
+<script type="text/javascript" defer async is:inline>
+  if (
+    window.location.pathname.match("/blog") ||
+    window.location.pathname.match("/a-propos") 
+  ) {
+    document.querySelector(".hero-navbar").style.display = "none";
+    document.querySelector(".left-navbar").style.display = "inline-flex";
+    document.querySelector(".rightbar").style.display = "inline-flex";
+  } else {
+    if (window.screen.width > 480) {
+      const halfWindowSize = window.innerHeight / 2;
+      var prevScrollpos = window.scrollY;
 
-    window.onscroll = function () {
-      var currentScrollPos = window.scrollY;
-      if (prevScrollpos > currentScrollPos) {
-        if (currentScrollPos < halfWindowSize) {
-          document.querySelector(".hero-navbar").style.display = "inline-flex";
-          document.querySelector(".left-navbar").style.display = "none";
-          document.querySelector(".rightbar").style.display = "none";
+      window.onscroll = function () {
+        var currentScrollPos = window.scrollY;
+        if (prevScrollpos > currentScrollPos) {
+          if (currentScrollPos < halfWindowSize) {
+            document.querySelector(".hero-navbar").style.display =
+              "inline-flex";
+            document.querySelector(".left-navbar").style.display = "none";
+            document.querySelector(".rightbar").style.display = "none";
+          }
+        } else {
+          if (currentScrollPos > halfWindowSize) {
+            document.querySelector(".hero-navbar").style.display = "none";
+            document.querySelector(".left-navbar").style.display =
+              "inline-flex";
+            document.querySelector(".rightbar").style.display = "inline-flex";
+          }
         }
-      } else {
-        if (currentScrollPos > halfWindowSize) {
-          document.querySelector(".hero-navbar").style.display = "none";
-          document.querySelector(".left-navbar").style.display = "inline-flex";
-          document.querySelector(".rightbar").style.display = "inline-flex";
-        }
-      }
-      prevScrollpos = currentScrollPos;
-    };
+        prevScrollpos = currentScrollPos;
+      };
+    }
   }
 </script>
 <style>
@@ -38,7 +49,6 @@ import NavBar from "./NavBar.astro";
     align-items: center;
   }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    
   }
 
   @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
