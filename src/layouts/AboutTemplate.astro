@@ -1,10 +1,12 @@
 ---
-import BaseHead from '../components/BaseHead.astro'
-import Footer from '../components/Footer.astro'
-import LeftBar from '../components/LeftBar.astro'
-import RightBar from '../components/RightBar.astro'
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import LeftBar from "../components/LeftBar.astro";
+import RightBar from "../components/RightBar.astro";
+import Separator from "../components/Separator.astro";
 
-const { frontmatter } = Astro.props
+const { frontmatter } = Astro.props;
 ---
 
 <html lang="fr">
@@ -13,6 +15,7 @@ const { frontmatter } = Astro.props
   </head>
 
   <body>
+    <Header />
     <LeftBar />
     <RightBar />
     <main class="content-container">
@@ -26,6 +29,7 @@ const { frontmatter } = Astro.props
             <span>{frontmatter.intro}</span>
           </div>
         </div>
+        <Separator />
         <slot />
       </article>
     </main>
@@ -62,6 +66,44 @@ const { frontmatter } = Astro.props
           margin-inline-end: 1rem;
           border: solid 1px #637ffd;
         }
+      }
+
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        .header {
+          display: inline-flex;
+          flex-direction: column;
+          position: relative;
+          height: fit-content;
+          width: 100%;
+        }
+        .illustration-container {
+          margin-inline: 3rem;
+          margin-block: 0;
+        }
+        .title-container {
+          padding-inline-start: 0;
+          > h1 {
+            margin-block-start: 2rem;
+            font-size: 2rem;
+            color: #FFFFFF;
+          }
+          > span {
+            color: #FFFFFFD9
+          }
+        }
+        article {
+          position: relative;
+        }
+      }
+
+      @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+      }
+
+      @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+      }
+
+      /* Desktops and laptops ----------- */
+      @media only screen and (min-device-width: 1025px) {
       }
     </style>
   </body>
