@@ -60,7 +60,7 @@ const projects = raw_data.data.map<any>((data: any) => {
     display: grid;
     grid-auto-flow: row;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 2rem;
+    gap: 2rem;
   }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .project-list {
@@ -68,6 +68,8 @@ const projects = raw_data.data.map<any>((data: any) => {
       grid-auto-flow: column;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(5, 1fr);
+      gap: 0;
+      row-gap: 2rem;
     }
   }
 
