@@ -1,11 +1,14 @@
 ---
+import Logo from "./Logo.astro";
 import HeaderLink from "./HeaderLink.astro";
+import SocialLinks from "./SocialLinks.astro";
 ---
 
 <button class="open-button" popovertarget="burger-menu">
   <img src="/icons/burger.svg" alt="" />
 </button>
 <nav popover id="burger-menu">
+  <Logo />
   <button
     class="close-button"
     popovertarget="burger-menu"
@@ -30,9 +33,9 @@ import HeaderLink from "./HeaderLink.astro";
       </HeaderLink>
     </li>
   </ul>
-
+  <SocialLinks />
 </nav>
-<style is:global>
+<style>
   .open-button {
     position: absolute;
     top: 1.75rem;
@@ -85,9 +88,29 @@ import HeaderLink from "./HeaderLink.astro";
         }
       }
     }
-  }
-  ul > li {
-    list-style: none;
+    > a {
+      img {
+        margin-block-start: 1.5rem;
+      }
+    }
+    > ul {
+      text-align: center;
+      padding-inline-start: 0;
+      > li {
+        list-style: none;
+        > a {
+          margin-block-start: 0;
+          margin-inline-start: 0;
+        }
+      }
+    }
+    > :last-child {
+      text-align: center;
+      > a {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
   }
 
   /* Desktops and laptops ----------- */
