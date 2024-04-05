@@ -7,43 +7,58 @@ import NavBar from "./NavBar.astro";
 </header>
 <!-- Custom script -->
 <script type="text/javascript" defer async is:inline>
-  if (
-    window.location.pathname.match("/blog") ||
-    window.location.pathname.match("/a-propos")
-  ) {
-    if (window.screen.width > 768) {
-      document.querySelector(".hero-navbar").style.display = "none";
-      document.querySelector(".left-navbar").style.display = "inline-flex";
-      document.querySelector(".rightbar").style.display = "inline-flex";
+  const NAVBAR_SHOWUP_BREAKPOINT = 1024;
+  function hideHeroNavBar() {
+    document.querySelector(".hero-navbar").style.display = "none";
+  }
+
+  function showHeroNavBar() {
+    document.querySelector(".hero-navbar").style.display = "inline-flex";
+  }
+
+  function showLeftNavBar() {
+    document.querySelector(".left-navbar").style.display = "inline-flex";
+    document.querySelector(".rightbar").style.display = "inline-flex";
+  }
+
+  function hideLeftNavBar() {
+    document.querySelector(".left-navbar").style.display = "none";
+    document.querySelector(".rightbar").style.display = "none";
+  }
+  if (!window.location.pathname.match("/")) {
+    if (window.screen.width > NAVBAR_SHOWUP_BREAKPOINT) {
+      showHeroNavBar();
+      hideLeftNavBar();
     } else {
-      document.querySelector(".hero-navbar").style.display = "inline-flex";
-      document.querySelector(".left-navbar").style.display = "none";
-      document.querySelector(".rightbar").style.display = "none";
+      hideHeroNavBar();
+      showLeftNavBar();
     }
   } else {
-    if (window.screen.width > 768) {
-      const halfWindowSize = window.innerHeight / 2;
-      var prevScrollpos = window.scrollY;
+    if (window.location.pathname === "/") {
+      if (window.screen.width > NAVBAR_SHOWUP_BREAKPOINT) {
+        const halfWindowSize = window.innerHeight / 2;
+        var prevScrollpos = window.scrollY;
 
-      window.onscroll = function () {
-        var currentScrollPos = window.scrollY;
-        if (prevScrollpos > currentScrollPos) {
-          if (currentScrollPos < halfWindowSize) {
-            document.querySelector(".hero-navbar").style.display =
-              "inline-flex";
-            document.querySelector(".left-navbar").style.display = "none";
-            document.querySelector(".rightbar").style.display = "none";
+        window.onscroll = function () {
+          var currentScrollPos = window.scrollY;
+          if (prevScrollpos > currentScrollPos) {
+            if (currentScrollPos < halfWindowSize) {
+              showHeroNavBar();
+              hideLeftNavBar();
+            }
+          } else {
+            if (currentScrollPos > halfWindowSize) {
+              hideHeroNavBar();
+              showLeftNavBar();
+            }
           }
-        } else {
-          if (currentScrollPos > halfWindowSize) {
-            document.querySelector(".hero-navbar").style.display = "none";
-            document.querySelector(".left-navbar").style.display =
-              "inline-flex";
-            document.querySelector(".rightbar").style.display = "inline-flex";
-          }
-        }
-        prevScrollpos = currentScrollPos;
-      };
+          prevScrollpos = currentScrollPos;
+        };
+      }
+    } else {
+      if (window.screen.width > NAVBAR_SHOWUP_BREAKPOINT) {
+        hideHeroNavBar();
+      }
     }
   }
 </script>
@@ -54,10 +69,8 @@ import NavBar from "./NavBar.astro";
     display: inline-flex;
     align-items: center;
   }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
   }
-
-
 
   @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
   }
