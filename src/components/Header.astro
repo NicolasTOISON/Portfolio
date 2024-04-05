@@ -11,7 +11,7 @@ import NavBar from "./NavBar.astro";
     window.location.pathname.match("/blog") ||
     window.location.pathname.match("/a-propos")
   ) {
-    if (window.screen.width > 480) {
+    if (window.screen.width > 768) {
       document.querySelector(".hero-navbar").style.display = "none";
       document.querySelector(".left-navbar").style.display = "inline-flex";
       document.querySelector(".rightbar").style.display = "inline-flex";
@@ -21,7 +21,7 @@ import NavBar from "./NavBar.astro";
       document.querySelector(".rightbar").style.display = "none";
     }
   } else {
-    if (window.screen.width > 480) {
+    if (window.screen.width > 768) {
       const halfWindowSize = window.innerHeight / 2;
       var prevScrollpos = window.scrollY;
 
@@ -54,11 +54,10 @@ import NavBar from "./NavBar.astro";
     display: inline-flex;
     align-items: center;
   }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
   }
 
-  @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
-  }
+
 
   @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
   }

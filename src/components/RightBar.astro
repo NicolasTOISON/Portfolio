@@ -46,13 +46,16 @@ const { hidden } = Astro.props;
     font-weight: 700;
     font-size: 48px;
   }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .rightbar {
       display: none;
     }
   }
 
   @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .rightbar {
+      display: none;
+    }
   }
 
   @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {

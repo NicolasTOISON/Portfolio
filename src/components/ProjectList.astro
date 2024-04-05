@@ -9,7 +9,6 @@ const raw_data = await octokit.request("GET /users/{username}/repos", {
   type: "owner",
   headers: {
     accept: "application/vnd.github+json",
-    authorization: "Bearer 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",
     "X-GitHub-Api-Version": "2022-11-28",
   },
   sort: "pushed",
@@ -62,7 +61,7 @@ const projects = raw_data.data.map<any>((data: any) => {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .project-list {
       display: grid;
       grid-auto-flow: column;
@@ -74,6 +73,14 @@ const projects = raw_data.data.map<any>((data: any) => {
   }
 
   @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .project-list {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, 1fr);
+      gap: 0;
+      row-gap: 2rem;
+    }
   }
 
   @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
