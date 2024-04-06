@@ -57,9 +57,12 @@ const { frontmatter } = Astro.props;
           margin-block-start: 3rem;
           margin-block-end: 1rem;
         }
+        > span {
+          color: #ffffffd9;
+        }
       }
       article {
-        > p:nth-child(2)::first-letter {
+        > *:nth-child(3)::first-letter {
           initial-letter: 4 5;
           -webkit-initial-letter: 4 5;
           padding: 1rem;
@@ -85,10 +88,10 @@ const { frontmatter } = Astro.props;
           > h1 {
             margin-block-start: 2rem;
             font-size: 2rem;
-            color: #FFFFFF;
+            color: #ffffff;
           }
           > span {
-            color: #FFFFFFD9
+            color: #ffffffd9;
           }
         }
         article {
