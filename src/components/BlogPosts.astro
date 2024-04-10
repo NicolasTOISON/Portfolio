@@ -3,12 +3,13 @@ import BlogPostPreview from "./BlogPostPreview.astro";
 import { getCollection } from "astro:content";
 
 const posts = (await getCollection("blog")).sort(
-  (a, b) => a.data.updatedDate.valueOf() - b.data.updatedDate.valueOf()
+  (a, b) => b.data.updatedDate.valueOf() - a.data.updatedDate.valueOf()
 );
 ---
 
 <div class="posts-list">
   {
+    posts ? 
     posts
       .slice(0, 4)
       .map((post) => (
@@ -20,7 +21,7 @@ const posts = (await getCollection("blog")).sort(
           categoryColor={post.data.categoryColor}
           slug={post.slug}
         />
-      ))
+      )) : <h1>Pas de poste</h1>
   }
 </div>
 <style>

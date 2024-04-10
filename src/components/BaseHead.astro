@@ -41,11 +41,3 @@ const { title, description, image = "/logo/logo_sombre.svg" } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
-
-<!-- RSS Feed -->
-<link
-  rel="alternate"
-  type="application/rss+xml"
-  title="Votre titre de site"
-  href={`${Astro.site}rss.xml`}
-/>

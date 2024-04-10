@@ -9,5 +9,4 @@ import robotsTxt from "astro-robots-txt";
 export default defineConfig({
   site: "https://nicolastoison.com/",
   integrations: [mdx(), sitemap(), robotsTxt()],
-  compressHTML: true,
 });

@@ -14,7 +14,7 @@ const yearsOfFreelancing = today - yearBeginningFreelancing;
   ></lottie-player>
   <Header />
   <div class="hero-container">
-    <span> Salut👋 !</span><br />
+    <span> Salut👋 !</span>
     <span>Je m'appelle <span class="accentued">Nicolas</span></span>
     <h1>
       Je suis passionné de technologie depuis toujours, j'ai occupé plusieurs
@@ -48,15 +48,23 @@ const yearsOfFreelancing = today - yearBeginningFreelancing;
   }
   .hero-container {
     position: relative;
-    left: 11rem;
+    display: flex;
+    flex-direction: column;
     font-size: 4rem;
     font-weight: 500;
-    width: 40%;
+    padding-block-start: 8rem;
+    padding-inline-start: 11rem;
+    max-width: 50%;
+    & > a {
+      margin-block-start: 2rem;
+      max-width: fit-content;
+    }
   }
   .hero-container > h1 {
     color: rgba(255, 255, 255, 0.85);
     font-size: 1rem;
     font-weight: 400;
+    margin: 0;
   }
   .accentued {
     color: #637ffd;
@@ -79,7 +87,10 @@ const yearsOfFreelancing = today - yearBeginningFreelancing;
       width: unset;
       left: unset;
       right: unset;
-      font-size: 3rem;
+      font-size: 2.5rem;
+      max-width: unset;
+      padding-block-start: unset;
+      padding-inline-start: 2rem;
     }
   }
 

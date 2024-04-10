@@ -10,7 +10,7 @@ import Separator from "../../components/Separator.astro";
 import Header from "../../components/Header.astro";
 
 const posts = (await getCollection("blog")).sort(
-  (a, b) => a.data.updatedDate.valueOf() - b.data.updatedDate.valueOf()
+  (a, b) => b.data.updatedDate.valueOf() - a.data.updatedDate.valueOf()
 );
 ---
 
