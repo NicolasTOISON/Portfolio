@@ -7,7 +7,7 @@ import robotsTxt from "astro-robots-txt";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://localhost:4321/",
+  site: "https://nicolastoison.com/",
   integrations: [mdx(), sitemap(), robotsTxt()],
   compressHTML: true,
 });
