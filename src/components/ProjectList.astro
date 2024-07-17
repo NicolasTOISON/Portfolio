@@ -22,8 +22,7 @@ type Projects = {
   slug: string;
 };
 
-const projects = raw_data.data.filter((data) => { data.name !== 'NicolasTOISON'}).map<any>((data: any) => {
-  console.log(projects);
+const projects = raw_data.data.filter((data) => data.name !== 'NicolasTOISON').map<any>((data: any) => {
   if (data.topics === undefined) {
     return {
       title: data.name,
