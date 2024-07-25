@@ -1,10 +1,18 @@
 ---
-layout: "../layouts/AboutTemplate.astro"
-title: "Mon parcours"
-description: "Lorem ipsum dolor sit amet"
-intro: "Je suis passionné de technologie depuis toujours, j'ai occupé plusieurs postes dans l'univers du développent logiciel depuis 7 ans et suis Freelance depuis 3 ans."
+layout: '../layouts/AboutTemplate.astro'
+meta_title: 'Nicolas TOISON | Ingénieur logiciel Front-End Freelance | Fondateur du studio de développement logiciel Web Crafters'
+description: "Je suis ingénieur logiciel Front-End depuis 2015, j'exerce en freelance depuis 2020 et ai fondé le studio de développement logiciel Web Crafters en 2024"
+title: "Salut 👋 ! Moi c'est Nicolas"
+intro: "Je suis ingénieur logiciel Front-End depuis 2015, j'exerce en freelance depuis 2020 et ai fondé le studio de développement logiciel Web Crafters en 2024. Je suis basé à Saint-Malo en Bretagne"
 ---
 
+## Parcours universitaire
+
+En 2009, à l'issue de mon baccalauréat, j'intègre le [DUT Informatique](https://www.iutsf.u-pec.fr/departements/informatique/but-informatique) de l'[IUT de Fontainebleau](https://www.iutsf.u-pec.fr/departements/informatique). Durant ce cursus généraliste, j'apprends les bases de la conception et de la programmation (en C en première année puis la programmation orientée objet en JAVA en deuxième année), de l'architecture système et réseaux, l'utilisation d'un système de gestion de base de données (SGBD) relationnel, de la sécurité et de la programmation pour le web.
+
+C'est un cursus qui m'a permis de développer une base solide de connaissance technique tout en l'appliquant dans le cadre de projets personnels ou en groupe. Avec le recul que j'ai aujourd'hui, je peux dire que c'est l'expérience universitaire la plus enrichissante, d'un point de vue technique que j'ai vécue.
+
+J'ai suivi un parcours universitaire classique débutant p
 Dès le début de ma carrière, j'ai toujours su que je voulais créer quelque chose d'unique et d'impactant. Avec une curiosité innée pour la technologie et une passion pour l'innovation, mon chemin s'est naturellement orienté vers le développement Front-End. Mon nom est Nicolas Toison, et je suis un développeur Front-End chevronné, spécialisé dans les frameworks Angular et ReactJS. Ce voyage, riche et instructif, m'a conduit à collaborer avec des grands noms tels qu'Orange Bank et BNP Paribas, où j'ai pu développer des applications web à la fois intuitives, performantes et accessibles. Permettez-moi de vous emmener à travers mon parcours professionnel, une aventure où la passion rencontre la technologie à chaque étape.
 
 Mon histoire débute à l'Université Paris 1 Panthéon-Sorbonne, où j'ai poursuivi un Master MIAGE & IKSEM. Durant ces années formatrices, de 2014 à 2016, j'ai acquis une solide base théorique en informatique, tout en développant une appréciation pour la complexité et la beauté du développement web. La réussite n'était pas seulement une question de maîtriser les langages de programmation, mais aussi de comprendre comment créer des expériences utilisateurs qui marquent les esprits et facilitent la vie quotidienne.
@@ -20,3 +28,11 @@ Retournant chez Orange Bank de 2020 à 2023 en tant que développeur Front-end, 
 Tout au long de mon parcours, j'ai continué à me former et à m'améliorer, comme en témoigne ma certification PSM 1 de Scrum.org en 2018. Mon engagement envers l'apprentissage continu et l'amélioration de mes compétences est au cœur de ma philosophie professionnelle.
 
 Ce voyage n'a pas seulement été une série de rôles et de projets ; il a été une exploration continue de ce qu'il est possible d'accomplir avec du code. À chaque étape, j'ai cherché à repousser les limites de l'innovation, à résoudre des problèmes complexes et à créer des expériences utilisateur qui simplifient et enrichissent la vie des gens.
+
+## Parcours professionnel
+
+L'informatique est une passion que j'ai depuis mon adolescence, lMon parcours dans le monde l'ingénierie logicielle débute
+
+## Parcours entrepreneurial
+
+## Et après ?
