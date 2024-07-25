@@ -62,3 +62,9 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 - [Astro documentation](https://docs.astro.build)
+
+## TO add
+
+https://commitlint.js.org/reference/rules-configuration.html
+https://commitizen.github.io/cz-cli/
+https://mbrehin.github.io/git-precommit-checks/
