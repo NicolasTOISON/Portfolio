@@ -2,6 +2,7 @@
 
 [![Release](https://github.com/NicolasTOISON/Portfolio/actions/workflows/release.yml/badge.svg)](https://github.com/NicolasTOISON/Portfolio/actions/workflows/release.yml)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e9a4516b-9fc9-4e4f-9620-3bbbf3f3ab5f/deploy-status)](https://app.netlify.com/sites/heroic-mandazi-8bb0fa/deploys)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 ## 🚀 Project Structure
 
