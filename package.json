@@ -28,6 +28,7 @@
     "@semantic-release/git": "^10.0.1",
     "@typescript-eslint/parser": "^7.16.1",
     "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.57.0",
     "eslint-plugin-astro": "^1.2.3",
     "eslint-plugin-jsx-a11y": "^6.9.0",
@@ -38,5 +39,10 @@
     "prettier-plugin-astro": "^0.14.1",
     "semantic-release": "^24.0.0",
     "typescript": "^5.5.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

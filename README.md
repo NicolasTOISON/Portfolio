@@ -6,13 +6,21 @@
 ## 🚀 Project Structure
 
 ```
+├── .github/
+│   ├── workflows/
+│   │   └── release.yml
+│   └── dependadot.yml
+├── .husky/
+│   ├── commit-msg
+│   ├── pre-commit
+│   └── prepare-commit-msg
 ├── public/
 │   ├── animations/
 │   ├── backgrounds/
 │   ├── fonts/
 │   ├── icons/
 │   ├── illustrations/
-│   ├── logo/
+│   └── logo/
 ├── src/
 │   ├── components/
 │   ├── content/
@@ -21,13 +29,19 @@
 │   ├── styles/
 │   ├── consts.ts
 │   └── env.d.ts
-├── .eslintrc.js
+├── .eslintrc.cjs
 ├── .gitignore
 ├── astro.config.mjs
+├── CHANGELOG.md
+├── commitlint.config.js
+├── git-precommit-checks.config.js
+├── lint-staged.config.js
 ├── netlify.toml
 ├── package-lock.json
 ├── package.json
+├── prettier.config.js
 ├── README.md
+├── release.config.js
 └── tsconfig.json
 ```
 
