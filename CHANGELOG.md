@@ -10,6 +10,12 @@
 
 - **dev workflow:** add lint staged and git precommit checks dependencies ([c7e21d9](https://github.com/NicolasTOISON/Portfolio/commit/c7e21d948f937baa877f6c6c928436cc397f8866))
 
+# [1.1.0](https://github.com/NicolasTOISON/Portfolio/compare/v1.0.0...v1.1.0) (2024-07-25)
+
+### Features
+
+- **dev workflow:** add lint staged and git precommit checks dependencies ([c7e21d9](https://github.com/NicolasTOISON/Portfolio/commit/c7e21d948f937baa877f6c6c928436cc397f8866))
+
 # 1.0.0 (2024-07-25)
 
 ### Bug Fixes
