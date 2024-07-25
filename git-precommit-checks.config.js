@@ -8,28 +8,33 @@ module.exports = {
   },
   rules: [
     {
-      message: "You’ve got leftover conflict markers",
+      message: 'You’ve got leftover conflict markers',
       regex: /^[<>|=]{4,}/m,
     },
     {
-      message: "Discontinued because something should not be committed!",
+      message: 'Discontinued because something should not be committed!',
       regex: /do not commit/i,
     },
     {
-      message: "You have unfinished devs",
+      message: 'You have unfinished devs',
       nonBlocking: true,
       regex: /(?:FIXME|TODO)/,
     },
     {
-      message: "You’ve got leftover forced `true` conditions",
+      message: 'You’ve got leftover forced `true` conditions',
       regex: /if\s+\(?(?:.*\|\|\s*)?true\)?/,
     },
     // JS specific
     {
       filter: /\.js$/,
-      message: "🤔 Hum! Did you forget to remove some logs?",
-      nonBlocking: true,
+      message: '🤔 Hum! Did you forget to remove some logs?',
+      regex: /^\s*console\.log/,
+    },
+    // Astro specific
+    {
+      filter: /\.astro$/,
+      message: '🤔 Hum! Did you forget to remove some logs?',
       regex: /^\s*console\.log/,
     },
   ],
-};
+}
