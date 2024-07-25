@@ -1,1 +1,7 @@
-exec < /dev/tty && node_modules/.bin/cz --hook || true
+if sh -c ": >/dev/tty" >/dev/null 2>/dev/null; then
+    exec < /dev/tty && node_modules/.bin/cz --hook || true
+else
+    exit 0
+fi
+
+
