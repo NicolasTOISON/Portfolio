@@ -50,21 +50,24 @@
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
+| Command                | Action                                                 |
+| :--------------------- | :----------------------------------------------------- |
+| `npm install`          | Installs dependencies                                  |
+| `npm run dev`          | Starts local dev server at `localhost:3000`            |
+| `npm run build`        | Build your production site to `./dist/`                |
+| `npm run preview`      | Preview your build locally, before deploying           |
+| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check`       |
+| `npm run astro --help` | Get help using the Astro CLI                           |
+| `npm run clean`        | Remove all generated files and clean npm cache         |
+| `npm run prepare`      | Call husky hooks to prepare code (prettifying mainly ) |
+| `npm run clean`        | Remove all generated files and clean npm cache         |
+| `npm run test`         | Launch test runner (Must to be implement)              |
 
 ## 👀 Want to learn more?
 
 - [Astro documentation](https://docs.astro.build)
 
-## TO add
+## To go further in commit linting and commit wizard assistant (commitizen)
 
 https://commitlint.js.org/reference/rules-configuration.html
 https://commitizen.github.io/cz-cli/
-https://mbrehin.github.io/git-precommit-checks/
