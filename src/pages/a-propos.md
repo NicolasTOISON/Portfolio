@@ -8,16 +8,40 @@ intro: "Je suis ingénieur logiciel Front-End depuis 2015, j'exerce en freelance
 
 ## Parcours universitaire
 
-En 2009, à l'issue de mon baccalauréat, j'intègre le [DUT Informatique](https://www.iutsf.u-pec.fr/departements/informatique/but-informatique) de l'[IUT de Fontainebleau](https://www.iutsf.u-pec.fr/departements/informatique). Durant ce cursus généraliste, j'apprends les bases de la conception et de la programmation (en C en première année puis la programmation orientée objet en JAVA en deuxième année), de l'architecture système et réseaux, l'utilisation d'un système de gestion de base de données (SGBD) relationnel, de la sécurité et de la programmation pour le web.
+Mon parcours dans l'informatique débute en 2009, à l'issue de mon baccalauréat, j'intègre le [DUT Informatique](https://www.iutsf.u-pec.fr/departements/informatique/but-informatique) de l'[IUT de Fontainebleau](https://www.iutsf.u-pec.fr/departements/informatique). Durant ce cursus généraliste, j'apprends les bases de la conception et de la programmation (en C en première année puis la programmation orientée objet en JAVA en deuxième année), de l'architecture système et réseaux, de l'utilisation d'un système de gestion de base de données (SGBD) relationnel, de la sécurité et de la programmation pour le web.
 
 C'est un cursus qui m'a permis de développer une base solide de connaissance technique tout en l'appliquant dans le cadre de projets personnels ou en groupe. Avec le recul que j'ai aujourd'hui, je peux dire que c'est l'expérience universitaire la plus enrichissante, d'un point de vue technique que j'ai vécue.
 
-J'ai suivi un parcours universitaire classique débutant p
-Dès le début de ma carrière, j'ai toujours su que je voulais créer quelque chose d'unique et d'impactant. Avec une curiosité innée pour la technologie et une passion pour l'innovation, mon chemin s'est naturellement orienté vers le développement Front-End. Mon nom est Nicolas Toison, et je suis un développeur Front-End chevronné, spécialisé dans les frameworks Angular et ReactJS. Ce voyage, riche et instructif, m'a conduit à collaborer avec des grands noms tels qu'Orange Bank et BNP Paribas, où j'ai pu développer des applications web à la fois intuitives, performantes et accessibles. Permettez-moi de vous emmener à travers mon parcours professionnel, une aventure où la passion rencontre la technologie à chaque étape.
+#### Stage chez Renault
 
-Mon histoire débute à l'Université Paris 1 Panthéon-Sorbonne, où j'ai poursuivi un Master MIAGE & IKSEM. Durant ces années formatrices, de 2014 à 2016, j'ai acquis une solide base théorique en informatique, tout en développant une appréciation pour la complexité et la beauté du développement web. La réussite n'était pas seulement une question de maîtriser les langages de programmation, mais aussi de comprendre comment créer des expériences utilisateurs qui marquent les esprits et facilitent la vie quotidienne.
+Après une année sabbatique, je reprends mes études supérieures, en 2013, en intégrant une licence [MIAGE](https://formations.pantheonsorbonne.fr/fr/catalogue-des-formations/licence-L/licence-mathematiques-et-informatique-appliquees-aux-sciences-humaines-et-sociales-KBTEXDIC/licence-miashs-parcours-miage-informatique-formation-initiale-KBTEZZCR.html) (Méthodes Informatiques Appliquées à la Gestion des Entreprises) à l'Université Paris 1 Panthéon-Sorbonne.
 
-Peu après l'obtention de mon diplôme, j'ai eu l'opportunité de rejoindre BNP Paribas en tant que développeur Front-End, où j'ai travaillé sur la refonte graphique intégrale d'un outil de rapprochement comptable. Cette première expérience professionnelle, de 2015 à 2016, m'a permis de mettre en application mes connaissances académiques et de me confronter à des défis techniques réels. L'utilisation du framework SlickGrid pour l'affichage des données comptables a été un projet particulièrement enrichissant, me poussant à affiner mes compétences en développement et ma capacité à travailler en équipe.
+Cette formation me permet de poursuivre le développement de mes compétences techniques en développement logiciel, acquises lors de mon DUT, tout en les enrichissant avec des savoir-faire transversaux.
+
+Ces nouveaux apprentissages incluent l'application des méthodes d'ingénierie pour la création et l'adaptation des systèmes d'information, la comptabilité générale et analytique, les techniques de test logiciel, la gestion de projet informatique, le marketing et les ressources humaines.
+
+Afin de valider ma licence, j'effectue un stage au sein de [l'agence web Pilot'in](https://www.pilot-in.com/) pour laquelle, je développe une application de gestion de leur partenaires. Cette expérience est parmi celle qui m'a le plus influencé car d'une part elle m'a permis de découvrir de l'intérieur le fonctionnement d'une agence web en plein démarrage et d'autre part elle m'a permis d'ajouter une corde à mon arc de compétence technique par la pratique du framework PHP Symfony 2.
+
+Je poursuis mon parcours MIAGE à l'Université Paris 1 Panthéon-Sorbonne, en suivant le [Master 1 MIAGE parcours S2I](https://formations.pantheonsorbonne.fr/fr/catalogue-des-formations/master-M/master-miage-KBUNM1QC/master-parcours-s2i-systemes-d-information-et-innovation-formation-initiale-apprentissage-et-contrat-pro-KBUNNHST.html) au cours duquel j'approfondis mes connaissances théoriques notamment des méthodes de gestion de projet, des modèles d'architectures logicielles, du marketing numérique et du contrôle de gestion.
+
+Au terme de mon année de Master 1, j'ai l'opportunité de rejoindre BNP Paribas en tant que développeur logiciel en stage. L'objet de mon stage est une refonte graphique intégrale d'un outil de rapprochement comptable au sein de la direction des systèmes d'information transverse à Montreuil.
+
+Cette opportunité débouche par la suite sur un contrat d'alternance me permettant ainsi de rejoindre le cursus [IKSEM](https://formations.pantheonsorbonne.fr/fr/catalogue-des-formations/master-M/master-miage-KBUNM1QC/master-parcours-iksem-information-knowledge-systems-engineering-management_formation-initiale-apprenti-et-pro-KBUNM1W5.html) en alternance pour ma deuxième année de master. Cette dernière année permet de clôturer parfaitement mon cursus en alliant la théorie et la pratique le tout en anglais, permettant de donner une dimension internationale à mon profil. Ce que je retiens surtout de cette année ce sont les rencontres que j'ai pu faire car mes camarades venait du monde entier.
+
+## Parcours professionnel
+
+### Capgemini fin 2016 > mi-2018
+
+À l'issue de mes études, je rejoins les rangs de l'ESN Capgemini fin 2016. Lors de ma première mission, je suis intégré au sein des effectifs de consultant en charge du développement de l'application mobile d'Orange Bank(la néo-banque de l'opérateur téléphonique d'Orange). Les défis, à relever, sont multiples.
+
+Au niveau culturel, il a fallu que j'intègre le fonctionnement du framework agile Scrum qui pour moi était complètement nouveau car lors de mon alternance, les projets étaient géré selon la méthode du cycle en V.
+
+Au niveau des process, il a fallu que je m'adapte également car on ne travaille par de la même manière lorsqu'on est le seul développeur du projet et lorsqu'on fait partie d'une équipe de plus de 10 personnes, faisant elle même partie d'un programme composé de plusieurs autres équipes.
+
+Au niveau des outils, j'ai du me mettre rapidement à niveau car la pile technique du projet Orange Bnak était plus récente que la stack sur laquelle je travaillais chez BNP Paribas
+
+- S'intégrer au sein d'un énorme projet
+- Apprendre une nouvelle stack technique (Framework )
 
 En 2016, j'ai rejoint Orange Bank, un tournant décisif dans ma carrière. Au sein d'une Scrum team dédiée au développement de l'application mobile Orange Bank et du site institutionnel, j'ai pu contribuer au développement du périmètre fonctionnel lié au paiement. Cette expérience jusqu'en 2018 a été une période d'apprentissage intense, durant laquelle j'ai défini et mis en place des bonnes pratiques en JavaScript & Git, en plus de développer et tester des fonctionnalités clés.
 
@@ -28,10 +52,6 @@ Retournant chez Orange Bank de 2020 à 2023 en tant que développeur Front-end, 
 Tout au long de mon parcours, j'ai continué à me former et à m'améliorer, comme en témoigne ma certification PSM 1 de Scrum.org en 2018. Mon engagement envers l'apprentissage continu et l'amélioration de mes compétences est au cœur de ma philosophie professionnelle.
 
 Ce voyage n'a pas seulement été une série de rôles et de projets ; il a été une exploration continue de ce qu'il est possible d'accomplir avec du code. À chaque étape, j'ai cherché à repousser les limites de l'innovation, à résoudre des problèmes complexes et à créer des expériences utilisateur qui simplifient et enrichissent la vie des gens.
-
-## Parcours professionnel
-
-L'informatique est une passion que j'ai depuis mon adolescence, lMon parcours dans le monde l'ingénierie logicielle débute
 
 ## Parcours entrepreneurial
 
