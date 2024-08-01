@@ -8,11 +8,11 @@ intro: "Je suis ingénieur logiciel Front-End depuis 2015, j'exerce en freelance
 
 ## Parcours universitaire
 
-Mon parcours dans l'informatique débute en 2009, à l'issue de mon baccalauréat, j'intègre le [DUT Informatique](https://www.iutsf.u-pec.fr/departements/informatique/but-informatique) de l'[IUT de Fontainebleau](https://www.iutsf.u-pec.fr/departements/informatique). Durant ce cursus généraliste, j'apprends les bases de la conception et de la programmation (en C en première année puis la programmation orientée objet en JAVA en deuxième année), de l'architecture système et réseaux, de l'utilisation d'un système de gestion de base de données (SGBD) relationnel, de la sécurité et de la programmation pour le web.
+Mon parcours universitaire débute en 2009, à l'issue de mon baccalauréat j'intègre le [DUT Informatique](https://www.iutsf.u-pec.fr/departements/informatique/but-informatique) de l'[IUT de Fontainebleau](https://www.iutsf.u-pec.fr/departements/informatique).
 
-C'est un cursus qui m'a permis de développer une base solide de connaissance technique tout en l'appliquant dans le cadre de projets personnels ou en groupe. Avec le recul que j'ai aujourd'hui, je peux dire que c'est l'expérience universitaire la plus enrichissante, d'un point de vue technique que j'ai vécue.
+Durant ce cursus généraliste, j'apprends les bases de la conception et de la programmation (en C en première année puis la programmation orientée objet en JAVA en deuxième année), de l'architecture système et réseaux, de l'utilisation d'un système de gestion de base de données (SGBD) relationnel, de la sécurité et de la programmation pour le web.
 
-#### Stage chez Renault
+C'est un cursus qui m'a permis de développer une base solide de connaissance technique tout en l'appliquant dans le cadre de projets personnels ou en groupe. C'est l'expérience universitaire la plus enrichissante techniquement que j'ai vécue. Pour sanctionner mon DUT, j'effectue un stage au sein du centre technique d'essais Renault à Lardy.
 
 Après une année sabbatique, je reprends mes études supérieures, en 2013, en intégrant une licence [MIAGE](https://formations.pantheonsorbonne.fr/fr/catalogue-des-formations/licence-L/licence-mathematiques-et-informatique-appliquees-aux-sciences-humaines-et-sociales-KBTEXDIC/licence-miashs-parcours-miage-informatique-formation-initiale-KBTEZZCR.html) (Méthodes Informatiques Appliquées à la Gestion des Entreprises) à l'Université Paris 1 Panthéon-Sorbonne.
 
@@ -26,9 +26,13 @@ Je poursuis mon parcours MIAGE à l'Université Paris 1 Panthéon-Sorbonne, en s
 
 Au terme de mon année de Master 1, j'ai l'opportunité de rejoindre BNP Paribas en tant que développeur logiciel en stage. L'objet de mon stage est une refonte graphique intégrale d'un outil de rapprochement comptable au sein de la direction des systèmes d'information transverse à Montreuil.
 
-Cette opportunité débouche par la suite sur un contrat d'alternance me permettant ainsi de rejoindre le cursus [IKSEM](https://formations.pantheonsorbonne.fr/fr/catalogue-des-formations/master-M/master-miage-KBUNM1QC/master-parcours-iksem-information-knowledge-systems-engineering-management_formation-initiale-apprenti-et-pro-KBUNM1W5.html) en alternance pour ma deuxième année de master. Cette dernière année permet de clôturer parfaitement mon cursus en alliant la théorie et la pratique le tout en anglais, permettant de donner une dimension internationale à mon profil. Ce que je retiens surtout de cette année ce sont les rencontres que j'ai pu faire car mes camarades venait du monde entier.
+Cette opportunité débouche par la suite sur un contrat d'alternance me permettant ainsi de rejoindre le cursus [IKSEM](https://formations.pantheonsorbonne.fr/fr/catalogue-des-formations/master-M/master-miage-KBUNM1QC/master-parcours-iksem-information-knowledge-systems-engineering-management_formation-initiale-apprenti-et-pro-KBUNM1W5.html) en alternance pour ma deuxième et dernière année de master. Cette dernière année me permet d'allier la théorie et la pratique le tout en pratiquant quotidiennement l'anglais.
+
+Ce que je retiens surtout de cette année ce sont les rencontres que j'ai pu faire en effet mes camarades venait du monde entier.
 
 ## Parcours professionnel
+
+### BNP Paribas de 2015 - 2016
 
 ### Capgemini fin 2016 > mi-2018
 
