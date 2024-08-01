@@ -1,8 +1,8 @@
 ---
-import BottomBar from "./BottomBar.astro";
-import CtaSection from "./CtaSection.astro";
-import Values from "./Values.astro";
-import Logo from "./Logo.astro";
+import BottomBar from './BottomBar.astro'
+import CtaSection from './CtaSection.astro'
+import Values from './Values.astro'
+import Logo from './Logo.astro'
 ---
 
 <footer>
@@ -69,7 +69,11 @@ import Logo from "./Logo.astro";
 
   .footer-menu {
     & > ul > li > * {
+      color: white;
       text-decoration: none;
+      &:hover {
+        color: #637ffd;
+      }
     }
     & *:hover {
       color: #637ffd;
@@ -86,8 +90,6 @@ import Logo from "./Logo.astro";
       grid-template-rows: repeat(2, 1fr);
     }
   }
-
-
 
   @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
   }

@@ -9,6 +9,11 @@ import LeftBar from '../components/LeftBar.astro'
 import ProjectList from '../components/ProjectList.astro'
 import BlogPosts from '../components/BlogPosts.astro'
 import Separator from '../components/Separator.astro'
+import { getCollection } from 'astro:content'
+
+const posts = (await getCollection('blog'))
+  .sort((a, b) => a.data.updatedDate.valueOf() - b.data.updatedDate.valueOf())
+  .slice(0, 4)
 ---
 
 <html lang="fr">
@@ -28,10 +33,10 @@ import Separator from '../components/Separator.astro'
           capacité à transformer des concepts en expériences en ligne
           captivantes.
         </p>
-        <Separator></Separator>
+        <Separator />
         <ProjectList />
       </Section>
-      <Section
+      {posts.length > 0 ? <Section
         id="blog"
         header="Blog"
         withButton="true"
@@ -44,9 +49,9 @@ import Separator from '../components/Separator.astro'
           portarum aditibus, propugnaculis insistebant et pinnis, congesta
           undique saxa telaque habentes in promptu.
         </p>
-        <Separator></Separator>
-        <BlogPosts />
-      </Section>
+        <Separator />
+        <BlogPosts posts={posts}/>
+      </Section> : <></>}
     </main>
     <Footer />
   </body>

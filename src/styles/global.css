@@ -5,8 +5,8 @@
  */
 
 @font-face {
-  font-family: "Agrandir";
-  src: url("/fonts/PPAgrandir-Regular.woff2") format("woff2");
+  font-family: 'Agrandir';
+  src: url('/fonts/PPAgrandir-Regular.woff2') format('woff2');
   font-display: swap;
 }
 
@@ -48,7 +48,7 @@ b {
   color: #637ffd;
 }
 a {
-  color: white;
+  color: #637ffd;
 }
 textarea {
   width: 100%;
