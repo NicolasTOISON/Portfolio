@@ -1,18 +1,24 @@
 ---
 layout: '../layouts/AboutTemplate.astro'
-meta_title: 'Nicolas TOISON | Ingénieur logiciel Front-End Freelance | Fondateur du studio de développement logiciel Web Crafters'
-description: "Je suis ingénieur logiciel Front-End depuis 2015, j'exerce en freelance depuis 2020 et ai fondé le studio de développement logiciel Web Crafters en 2024"
+meta_title: 'Nicolas TOISON | Ingénieur logiciel Freelance & fondateur de Web Crafters'
+description: "Salut 👋 ! Moi c'est Nicolas. Je suis ingénieur logiciel depuis 2015, j'exerce en freelance depuis 2020 et ai fondé Web Crafters en 2024"
 title: "Salut 👋 ! Moi c'est Nicolas"
-intro: "Je suis ingénieur logiciel Front-End depuis 2015, j'exerce en freelance depuis 2020 et ai fondé le studio de développement logiciel Web Crafters en 2024. Je suis basé à Saint-Malo en Bretagne"
+intro: "Je suis ingénieur logiciel depuis 2015, j'exerce en freelance depuis 2020 et ai fondé le studio de développement logiciel Web Crafters en 2024. Je suis basé à Saint-Malo en Bretagne"
 ---
 
 ## Parcours universitaire
+
+Mon parcours universitaire commence en 2009 avec un DUT Informatique à l'IUT de Fontainebleau. Après une année sabbatique, je poursuis en 2013 une licence MIAGE à Paris 1 Panthéon-Sorbonne. Ensuite, j'intègre un Master 1 MIAGE, puis j'enchaine sur le Master 2 IKSEM en alternance.
+
+### DUT Informatique de 2009 à 2012
 
 Mon parcours universitaire débute en 2009, à l'issue de mon baccalauréat j'intègre le [DUT Informatique](https://www.iutsf.u-pec.fr/departements/informatique/but-informatique) de l'[IUT de Fontainebleau](https://www.iutsf.u-pec.fr/departements/informatique).
 
 Durant ce cursus généraliste, j'apprends les bases de la conception et de la programmation (en C en première année puis la programmation orientée objet en JAVA en deuxième année), de l'architecture système et réseaux, de l'utilisation d'un système de gestion de base de données (SGBD) relationnel, de la sécurité et de la programmation pour le web.
 
 C'est un cursus qui m'a permis de développer une base solide de connaissance technique tout en l'appliquant dans le cadre de projets personnels ou en groupe. C'est l'expérience universitaire la plus enrichissante techniquement que j'ai vécue. Pour sanctionner mon DUT, j'effectue un stage au sein du centre technique d'essais Renault à Lardy.
+
+### L3 MIAGE à l'Université Paris 1 Panthéon-Sorbonne de 2013 à 2014
 
 Après une année sabbatique, je reprends mes études supérieures, en 2013, en intégrant une licence [MIAGE](https://formations.pantheonsorbonne.fr/fr/catalogue-des-formations/licence-L/licence-mathematiques-et-informatique-appliquees-aux-sciences-humaines-et-sociales-KBTEXDIC/licence-miashs-parcours-miage-informatique-formation-initiale-KBTEZZCR.html) (Méthodes Informatiques Appliquées à la Gestion des Entreprises) à l'Université Paris 1 Panthéon-Sorbonne.
 
@@ -21,6 +27,8 @@ Cette formation me permet de poursuivre le développement de mes compétences te
 Ces nouveaux apprentissages incluent l'application des méthodes d'ingénierie pour la création et l'adaptation des systèmes d'information, la comptabilité générale et analytique, les techniques de test logiciel, la gestion de projet informatique, le marketing et les ressources humaines.
 
 Afin de valider ma licence, j'effectue un stage au sein de [l'agence web Pilot'in](https://www.pilot-in.com/) pour laquelle, je développe une application de gestion de leur partenaires. Cette expérience est parmi celle qui m'a le plus influencé car d'une part elle m'a permis de découvrir de l'intérieur le fonctionnement d'une agence web en plein démarrage et d'autre part elle m'a permis d'ajouter une corde à mon arc de compétence technique par la pratique du framework PHP Symfony 2.
+
+### M1 MIAGE et M2 IKSEM à l'Université Paris 1 Panthéon-Sorbonne de 2014 à 2016
 
 Je poursuis mon parcours MIAGE à l'Université Paris 1 Panthéon-Sorbonne, en suivant le [Master 1 MIAGE parcours S2I](https://formations.pantheonsorbonne.fr/fr/catalogue-des-formations/master-M/master-miage-KBUNM1QC/master-parcours-s2i-systemes-d-information-et-innovation-formation-initiale-apprentissage-et-contrat-pro-KBUNNHST.html) au cours duquel j'approfondis mes connaissances théoriques notamment des méthodes de gestion de projet, des modèles d'architectures logicielles, du marketing numérique et du contrôle de gestion.
 
@@ -32,9 +40,11 @@ Ce que je retiens surtout de cette année ce sont les rencontres que j'ai pu fai
 
 ## Parcours professionnel
 
-### BNP Paribas de 2015 - 2016
+À l'issue de mes études, je rejoins les rangs de l'ESN Capgemini fin 2016 en tant qu'ingénieur logiciel puis j'évolue au sein de ma mission en tant que Tech Leader/Scrum Master de ma feature team. En juillet 2018, je retourne chez BNP Paribas en tant que Responsable d'application / Scrum Master. Depuis 2020, je propose, en freelance, mes compétences en ingénierie logiciel à des clients grands comptes et des PME.
 
-### Capgemini fin 2016 > mi-2018
+### Développeur logiciel @ BNP Paribas de 2015 > 2016
+
+### Ingénieur logiciel @ Capgemini fin 2016 > mi-2018
 
 À l'issue de mes études, je rejoins les rangs de l'ESN Capgemini fin 2016. Lors de ma première mission, je suis intégré au sein des effectifs de consultant en charge du développement de l'application mobile d'Orange Bank(la néo-banque de l'opérateur téléphonique d'Orange). Les défis, à relever, sont multiples.
 
@@ -47,15 +57,19 @@ Au niveau des outils, j'ai du me mettre rapidement à niveau car la pile techniq
 - S'intégrer au sein d'un énorme projet
 - Apprendre une nouvelle stack technique (Framework )
 
-En 2016, j'ai rejoint Orange Bank, un tournant décisif dans ma carrière. Au sein d'une Scrum team dédiée au développement de l'application mobile Orange Bank et du site institutionnel, j'ai pu contribuer au développement du périmètre fonctionnel lié au paiement. Cette expérience jusqu'en 2018 a été une période d'apprentissage intense, durant laquelle j'ai défini et mis en place des bonnes pratiques en JavaScript & Git, en plus de développer et tester des fonctionnalités clés.
+Cette expérience jusqu'en 2018 a été une période d'apprentissage intense, durant laquelle j'ai défini et mis en place des bonnes pratiques en JavaScript & Git, en plus de développer et tester des fonctionnalités clés.
 
-La suite de mon aventure m'a vu évoluer chez BNP Paribas en tant que responsable technique de 2018 à 2020. Dans ce rôle, j'étais chargé de superviser les évolutions techniques et fonctionnelles de deux applications, tout en assurant leur continuité de service. Ce fut une période de croissance personnelle et professionnelle, où j'ai appris l'importance de la gestion de projet, de la collaboration interdisciplinaire, et de l'innovation continue.
+### Responsable d'application / Scrum Master @ BNP Paribas (mi-2018 à fin 2019)
+
+La suite de mon aventure m'a vu évoluer chez BNP Paribas en tant que responsable technique / Scrum Master de 2018 à fin 2019. Dans ce rôle, j'étais chargé de superviser les évolutions techniques et fonctionnelles de deux applications, tout en assurant leur continuité de service. Ce fut une période de croissance personnelle et professionnelle, où j'ai appris l'importance de la gestion de projet, de la collaboration interdisciplinaire, et de l'innovation continue.
+
+### Retour aux sources: Ingénieur Logiciel en Freelance début 2020
 
 Retournant chez Orange Bank de 2020 à 2023 en tant que développeur Front-end, j'ai relevé de nouveaux défis en évoluant l'interface d'une application de gestion des states machines. Ce projet complexe m'a permis de recueillir et d'analyser les besoins de l'équipe support, de développer un moteur de recherche et de préparer l'application au déploiement sur AWS EKS. Chaque étape m'a enseigné l'importance de la flexibilité, de la précision et de la vision stratégique dans le développement de solutions technologiques avancées.
 
 Tout au long de mon parcours, j'ai continué à me former et à m'améliorer, comme en témoigne ma certification PSM 1 de Scrum.org en 2018. Mon engagement envers l'apprentissage continu et l'amélioration de mes compétences est au cœur de ma philosophie professionnelle.
 
-Ce voyage n'a pas seulement été une série de rôles et de projets ; il a été une exploration continue de ce qu'il est possible d'accomplir avec du code. À chaque étape, j'ai cherché à repousser les limites de l'innovation, à résoudre des problèmes complexes et à créer des expériences utilisateur qui simplifient et enrichissent la vie des gens.
+Ce voyage n'a pas seulement été une série de rôles et de projets; il a été une quête continue d'apprentissage. À chaque étape, j'ai cherché à résoudre des problèmes complexes et à créer des expériences utilisateur qui simplifient et enrichissent la vie des gens avec pragmatisme.
 
 ## Parcours entrepreneurial
 
