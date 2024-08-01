@@ -1,26 +1,20 @@
 ---
-import BlogPostPreview from "./BlogPostPreview.astro";
-import { getCollection } from "astro:content";
-
-const posts = (await getCollection("blog")).sort(
-  (a, b) => a.data.updatedDate.valueOf() - b.data.updatedDate.valueOf()
-);
+import BlogPostPreview from './BlogPostPreview.astro'
+const { posts } = Astro.props
 ---
 
 <div class="posts-list">
   {
-    posts
-      .slice(0, 4)
-      .map((post) => (
-        <BlogPostPreview
-          title={post.data.title}
-          description={post.data.description}
-          heroImage={post.data.heroImage}
-          category={post.data.category}
-          categoryColor={post.data.categoryColor}
-          slug={post.slug}
-        />
-      ))
+    posts.map((post) => (
+      <BlogPostPreview
+        title={post.data.title}
+        description={post.data.description}
+        heroImage={post.data.heroImage}
+        category={post.data.category}
+        categoryColor={post.data.categoryColor}
+        slug={post.slug}
+      />
+    ))
   }
 </div>
 <style>
@@ -35,8 +29,6 @@ const posts = (await getCollection("blog")).sort(
       flex-direction: column;
     }
   }
-
-
 
   @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
   }
