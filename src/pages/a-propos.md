@@ -2,8 +2,8 @@
 layout: '../layouts/AboutTemplate.astro'
 meta_title: 'Nicolas TOISON | Ingénieur logiciel Freelance & fondateur de Web Crafters'
 description: "Salut 👋 ! Moi c'est Nicolas. Je suis ingénieur logiciel depuis 2015, j'exerce en freelance depuis 2020 et ai fondé Web Crafters en 2024"
-title: "Salut 👋 ! Moi c'est Nicolas"
-intro: "Je suis ingénieur logiciel depuis 2015, j'exerce en freelance depuis 2020 et ai fondé le studio de développement logiciel Web Crafters en 2024. Je suis basé à Saint-Malo en Bretagne"
+title: 'Salut 👋 !'
+intro: "Moi c'est Nicolas, je suis ingénieur logiciel depuis 2015, j'exerce en freelance depuis 2020 et ai fondé le studio de développement logiciel Web Crafters en 2024. Je suis basé à Saint-Malo en Bretagne"
 ---
 
 ## Parcours universitaire
