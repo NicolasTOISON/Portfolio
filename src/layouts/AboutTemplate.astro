@@ -1,19 +1,21 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
-import LeftBar from "../components/LeftBar.astro";
-import RightBar from "../components/RightBar.astro";
-import Separator from "../components/Separator.astro";
+import BaseHead from '../components/BaseHead.astro'
+import Footer from '../components/Footer.astro'
+import Header from '../components/Header.astro'
+import LeftBar from '../components/LeftBar.astro'
+import RightBar from '../components/RightBar.astro'
+import Separator from '../components/Separator.astro'
 
-const { frontmatter } = Astro.props;
+const { frontmatter } = Astro.props
 ---
 
 <html lang="fr">
   <head>
-    <BaseHead title={frontmatter.title} description={frontmatter.description} />
+    <BaseHead
+      title={frontmatter.meta_title}
+      description={frontmatter.description}
+    />
   </head>
-
   <body>
     <Header />
     <LeftBar />
@@ -34,80 +36,80 @@ const { frontmatter } = Astro.props;
       </article>
     </main>
     <Footer />
-    <style>
-      .header {
-        display: inline-flex;
-        height: fit-content;
-      }
-
-      .illustration-container {
-        margin-inline-start: 3rem;
-        margin-block: 2rem;
-        min-width: 16rem;
-        > img {
-          height: auto;
-        }
-      }
-      .title-container {
-        padding-inline-start: 2rem;
-        > h1 {
-          color: rgba(255, 255, 255, 0.85);
-          font-size: 3.25rem;
-          font-weight: 400;
-          margin-block-start: 3rem;
-          margin-block-end: 1rem;
-        }
-        > span {
-          color: #ffffffd9;
-        }
-      }
-      article {
-        > *:nth-child(3)::first-letter {
-          initial-letter: 4 5;
-          -webkit-initial-letter: 4 5;
-          padding: 1rem;
-          margin-inline-end: 1rem;
-          border: solid 1px #637ffd;
-        }
-      }
-
-      @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-        .header {
-          display: inline-flex;
-          flex-direction: column;
-          position: relative;
-          height: fit-content;
-          width: 100%;
-        }
-        .illustration-container {
-          margin-inline: 3rem;
-          margin-block: 0;
-        }
-        .title-container {
-          padding-inline-start: 0;
-          > h1 {
-            margin-block-start: 2rem;
-            font-size: 2rem;
-            color: #ffffff;
-          }
-          > span {
-            color: #ffffffd9;
-          }
-        }
-        article {
-          position: relative;
-        }
-      }
-
-      @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
-      }
-
-      @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-      }
-
-      /* Desktops and laptops ----------- */
-      @media only screen and (min-device-width: 1025px) {
-      }
-    </style>
   </body>
 </html>
+<style>
+  .header {
+    display: inline-flex;
+    height: fit-content;
+  }
+
+  .illustration-container {
+    margin-inline-start: 3rem;
+    margin-block: 2rem;
+    min-width: 16rem;
+    > img {
+      height: auto;
+    }
+  }
+  .title-container {
+    padding-inline-start: 2rem;
+    > h1 {
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 3.25rem;
+      font-weight: 400;
+      margin-block-start: 3rem;
+      margin-block-end: 1rem;
+    }
+    > span {
+      color: #ffffffd9;
+    }
+  }
+  article {
+    > p:nth-child(4)::first-letter {
+      initial-letter: 4 5;
+      -webkit-initial-letter: 4 5;
+      padding: 1rem;
+      margin-inline-end: 1rem;
+      border: solid 1px #637ffd;
+    }
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+    .header {
+      display: inline-flex;
+      flex-direction: column;
+      position: relative;
+      height: fit-content;
+      width: 100%;
+    }
+    .illustration-container {
+      margin-inline: 3rem;
+      margin-block: 0;
+    }
+    .title-container {
+      padding-inline-start: 0;
+      > h1 {
+        margin-block-start: 2rem;
+        font-size: 2rem;
+        color: #ffffff;
+      }
+      > span {
+        color: #ffffffd9;
+      }
+    }
+    article {
+      position: relative;
+    }
+  }
+
+  @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  }
+
+  @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  }
+
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-device-width: 1025px) {
+  }
+</style>

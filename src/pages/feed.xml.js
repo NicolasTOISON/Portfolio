@@ -1,10 +1,10 @@
-import rss from "@astrojs/rss";
-import { getCollection } from "astro:content";
+import rss from '@astrojs/rss'
+import { getCollection } from 'astro:content'
 
 export async function GET(context) {
-  const blog = await getCollection("blog");
+  const blog = await getCollection('blog')
   return rss({
-    title: "Blog de Nicolas TOISON",
+    title: 'Blog de Nicolas TOISON',
     description: `Le blog d'un développeur front`,
     site: context.site,
     items: blog.map((post) => ({
@@ -15,5 +15,5 @@ export async function GET(context) {
       link: `/blog/${post.slug}/`,
     })),
     customData: `<language>fr-FR</language>`,
-  });
+  })
 }

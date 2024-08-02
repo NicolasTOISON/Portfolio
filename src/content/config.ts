@@ -1,5 +1,5 @@
-import { defineCollection, z } from "astro:content";
-import { rssSchema } from "@astrojs/rss";
+import { defineCollection, z } from 'astro:content'
+import { rssSchema } from '@astrojs/rss'
 
 const blog = defineCollection({
   // Type-check frontmatter using a schema
@@ -19,6 +19,6 @@ const blog = defineCollection({
     category: z.string().optional(),
     categoryColor: z.string().optional(),
   }),
-});
+})
 
-export const collections = { blog };
+export const collections = { blog }
